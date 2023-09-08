@@ -22,12 +22,13 @@ public class AttStoresTest extends TestBase{
 
 	}
 	@Test (priority=2)
-	public void VerifyHeading() {
+	public void VerifyHeading() throws Exception {
 		AttStore.heading();
 	}
 	
 	@Test(priority=1)
-	public void VerifyFeedbackWindowClosed() {
+	public void VerifyFeedbackWindowClosed() throws Exception {
+		
 		AttStore.FbWindow();
 	}
 	
@@ -64,7 +65,39 @@ public class AttStoresTest extends TestBase{
 		AttStore.OverviewTabAddress();
 	}
 	
+	
 	@Test (priority=10)
+	public void VerifyOffersSectionTitle() throws Exception {
+		AttStore.Offers();
+	}
+	
+
+	@Test (priority=11)
+	public void VerifyAboutSectnTitle() throws Exception {
+		AttStore.About();
+	}
+	
+	@Test (priority=12)
+	public void VerifyFAQTitle() throws Exception {
+		AttStore.FAQ();
+	}
+	
+	@Test(priority=13)
+	public void VerifyFAQQuestions() throws Exception {
+		AttStore.NearbyLocations();
+	}
+	
+
+	@Test(priority=14)
+	public void VerifyAttServices() throws Exception {
+		AttStore.AttServices();
+	}
+
+	@Test(priority=15)
+	public void VerifyFooterServices() throws Exception {
+		AttStore.FooterServices();
+	}
+	@Test (priority=16)
 	public void VerifyOverviewSectionAddressOnMap() throws Exception {
 		AttStore.OverviewTabAddressMap();
 	}

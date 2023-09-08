@@ -1,0 +1,1 @@
+{"uuid":"a94fb7a8-fe33-46bf-a0d8-c51bd4ba7c3f","name":"com.qa.Test.AttStoresTest","children":["aeba368f-7185-46f0-843a-d3ca28456d4c"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1694161060361,"stop":1694161061844}],"afters":[],"links":[],"start":1694161060334,"stop":1694161064770}

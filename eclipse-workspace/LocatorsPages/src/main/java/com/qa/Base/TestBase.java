@@ -3,6 +3,8 @@ package com.qa.Base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.PageLoadStrategy;
@@ -55,6 +57,15 @@ public class TestBase {
 			 * DesiredCapabilities cap = DesiredCapabilities.chrome();
 			 * cap.setCapability(ChromeOptions.CAPABILITY, options);
 			 */
+//		        Map<String, Object> prefs = new HashMap<String, Object>();
+//		        Map<String, Object> profile = new HashMap<String, Object>();
+//		        Map<String, Object> contentSettings = new HashMap<String, Object>();
+//		        contentSettings.put("cookies", 2);
+//		        profile.put("managed_default_content_settings", contentSettings);
+//		        prefs.put("profile", profile);
+//		        options.setExperimentalOption("prefs", prefs);
+		//        WebDriverManager.chromedriver().setup();
+		//        driver = new ChromeDriver(options);
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 		//	options.addArguments("start-maximized");
 			options.addArguments("enable-automation");

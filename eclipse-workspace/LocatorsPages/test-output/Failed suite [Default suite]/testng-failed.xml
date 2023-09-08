@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Default suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)(failed)">
+    <classes>
+      <class name="com.qa.Test.AttStoresTest">
+        <methods>
+          <include name="VerifyOverviewSectionAddressOnMap"/>
+          <include name="VerifyOverviewSectionTime"/>
+          <include name="VerifyFAQTitle"/>
+          <include name="VerifyAttServices"/>
+          <include name="setUp"/>
+          <include name="VerifyShopNowLink"/>
+          <include name="VerifyAboutSectnTitle"/>
+          <include name="VerifyOffersSectionTitle"/>
+          <include name="VerifyFAQQuestions"/>
+          <include name="VerifyOverviewSectionAddress"/>
+        </methods>
+      </class> <!-- com.qa.Test.AttStoresTest -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

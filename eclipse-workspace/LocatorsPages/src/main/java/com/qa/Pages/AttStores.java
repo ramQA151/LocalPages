@@ -3,16 +3,18 @@ package com.qa.Pages;
 import java.util.List;
 import java.util.Set;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
 import com.qa.Base.TestBase;
 
 public class AttStores extends TestBase{
 	WebDriver driver;
+	
 	@FindBy(xpath="//div[@id='fsrInvite']")
 	String Feedback;
 	
@@ -70,62 +72,133 @@ public class AttStores extends TestBase{
 	
 	@FindBy(xpath="//a[contains(text(),'Offers')]")
 	WebElement OffersSection;
+	
+	@FindBy(xpath="//h2[@class='Products-title']")
+	WebElement OffersSectnTitle;
+	
+	@FindBy(xpath="//div[@id=\"Offers\"]")
+	List <WebElement> AllOffers;
+	
+	@FindBy(xpath="//a[@id='aboutJump']")
+	WebElement AboutSection;
+	
+	@FindBy(xpath="//h2[@class='About-title']")
+	WebElement AboutSectnTitle;
+	
+	
+	@FindBy(xpath="//a[@class='Core-navLink js-nav-link LinkRedesign--header']")
+	WebElement FAQSection;
+	
+	
+	@FindBy(xpath="//h2[@class='FAQ-title']")
+	WebElement FAQSectionTitle;
+	
+	@FindBy(xpath="//span[@class='FAQ-questionText']")
+	List<WebElement> FAQQuestions;
+	
+	@FindBy(xpath="//a[normalize-space()='Nearby Locations']")
+	WebElement NearbyLocations;
+	
+	@FindBy(xpath="//h2[@class='Nearby-title']")
+	WebElement NearbyLocationTitle;
+	
+	
+	@FindBy(xpath="//li[@class='Nearby-loc js-nearby-loc showNearby']")
+	WebElement NearbyAddress;
+	
+	@FindBy(xpath="//h2[@class='Services-title']")
+	WebElement AttServicesTitle;
+	
+	@FindBy(xpath="//ul[@class='Services-list']//a[@class='Service-link']")
+	List <WebElement> AttServices;
+	
+	@FindBy(xpath="//div[@id='z5-footer-content']//a")
+	List<WebElement> FooterMenu;
+	
+	@FindBy(xpath="//li[@class='hide-sm hide-xsm']//a[contains(@aria-label,'Find a store')][normalize-space()='Find a store']")
+	WebElement FindStore;
+	
+	@FindBy(xpath="//font[contains(text(),'Find a store')]")
+	WebElement FindStoreLink;
+	
+	@FindBy(xpath="//form[@id='locator_search']//h1")
+	WebElement ATTPage;
+	
 	public AttStores(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		
 	}
 		
-	public void heading() {
+	public void heading() throws Exception {
+		Thread.sleep(4000);
 		System.out.println(heading.getText());
 	}
-	public void FbWindow() {
-		closeFbWindow.click();
+	public  void FbWindow() throws Exception {
+		Thread.sleep(4000);
+		if (Fbheading1.isDisplayed()) 
+		{closeFbWindow.click();
+		 System.out.println("Closed the cache acceptance window.");
+		} 
+		else 
+		{System.out.println("Cache acceptance window is not displayed.");
+		}
 }
 	public void BillPayment() throws Exception {
+		Thread.sleep(4000);
 		BillPay.click();
-		System.out.println(BillPaymentPageTitle.getText());
-		Assert.assertTrue(true, "Pay without signing in");
+		System.out.println("Heading: "+BillPaymentPageTitle.getText());
+		String title=BillPaymentPageTitle.getText();
+		Assert.assertEquals(title, "Pay without signing in");
 		Thread.sleep(4000);
 		driver.navigate().back();
 		Thread.sleep(4000);
-
+		
 	}
-	public void UpgradingDevice() throws InterruptedException {
+	public void UpgradingDevice() throws Exception {
 		UpgradeDevice.click();
-		System.out.println(UpgradeDevicePageTitle.getText());
-		Assert.assertTrue(true, "Get up to five of your devices upgraded at once—in a single order. Upgrade now ");
+		Thread.sleep(4000);
+		System.out.println("Heading: "+UpgradeDevicePageTitle.getText());
+		String title=UpgradeDevicePageTitle.getText();
+		//Assert.assertEquals(title, "Get up to five of your devices upgraded at once—in a single order. Upgrade now ");
 		Thread.sleep(4000);
 		driver.navigate().back();
 		Thread.sleep(4000);
+		
 
 	}
 	
 	public void GetSupport() throws Exception {
 		GetSupport.click();
 		Thread.sleep(4000);
-		System.out.println(GetSupportPageTitle.getText());
-		//Assert.assertTrue(true, "Get up to five of your devices upgraded at once—in a single order. Upgrade now ");
+		System.out.println("Heading: "+GetSupportPageTitle.getText());
 		Thread.sleep(4000);
 		driver.navigate().back();
+		
 	}
 	
 
 	public void GetMyAttApp() throws Exception {
 		myATTApp.click();
 		Thread.sleep(4000);
-		System.out.println(GetmyATTAppPageTitle.getText());
-		Assert.assertTrue(true, "Make everything easier with the myAT&T app");
+		System.out.println("Heading: "+GetmyATTAppPageTitle.getText());
+		String title=GetmyATTAppPageTitle.getText();
+		Assert.assertEquals(title, "Make everything easier with the myAT&T app");
 		Thread.sleep(4000);
 		driver.navigate().back();
+		Thread.sleep(4000);
+		
 	}
 	public void ShopNowBtn() throws Exception {
 		ShopNow.click();
 		Thread.sleep(4000);
-		System.out.println(ShopNowPageTitle.getText());
-		Assert.assertTrue(true, "Pick your devic");
+		System.out.println("Heading: "+ShopNowPageTitle.getText());
+		String title=ShopNowPageTitle.getText();
+		Assert.assertEquals(title, "Pick your device");
 		Thread.sleep(4000);
 		driver.navigate().back();
+		Thread.sleep(4000);
+		
 	}
 	
 	public void OverviewTabTime() throws Exception {
@@ -138,34 +211,101 @@ public class AttStores extends TestBase{
 			}
 		
 		public void OverviewTabAddress() throws Exception {
+			Thread.sleep(4000);
 			Overview.click();
-			System.out.println(OverviewAddress.getText());
+			System.out.println("Heading: "+OverviewAddress.getText());
 		}
 		
 		public void OverviewTabAddressMap() throws Exception {
-			GetDirection.click();
-			String parentWindowHandle = driver.getWindowHandle();
-
-			Set<String> allWindowHandles = driver.getWindowHandles();
-
-			for (String windowHandle : allWindowHandles) {
-			    if (!windowHandle.equals(parentWindowHandle)) {
-			        driver.switchTo().window(windowHandle);
-			       
-			    }
+			Thread.sleep(4000);
+			JavascriptExecutor js= (JavascriptExecutor)driver;
+			js.executeScript("window.scrollBy(0,1000)");
+			 String parentWindowHandle = driver.getWindowHandle();
+		       GetDirection.click(); 
+		      for (String winHandle : driver.getWindowHandles()) {
+		    driver.switchTo().window(winHandle); 
+			System.out.println("Title of parent window is: "+driver.getTitle());
+			     }
+		   driver.close();
+			 driver.switchTo().window(parentWindowHandle)  ;   
+		}
+		public void Offers() throws Exception {
+			OffersSection.click();
+			Thread.sleep(4000);
+			System.out.println("Heading: "+OffersSectnTitle.getText());
+			Thread.sleep(2000);
+			for(WebElement Alloffrs: AllOffers) {
+			String Text = Alloffrs.getText();
+		    System.out.println("Open Until" +Text);
+		    String OfferNeeded="Find out how everyone gets Samsung Galaxy S23 Ultra for ";
+			Assert.assertTrue(Text.contains(OfferNeeded),OfferNeeded);
 			}
-			Thread.sleep(6000);
-			System.out.println("Title of child window is: "+driver.getTitle());
-			driver.close();
 		}
 		
-		public void Offers() throws Exception {
-			ShopNow.click();
+		public void About() throws Exception {
 			Thread.sleep(4000);
-			System.out.println(ShopNowPageTitle.getText());
-			Assert.assertTrue(true, "Pick your devic");
+			AboutSection.click();
 			Thread.sleep(4000);
-			driver.navigate().back();
+			System.out.println("Heading: "+AboutSectnTitle.getText());
+			Thread.sleep(2000);
+			Assert.assertEquals(AboutSectnTitle.getText(), "About the Westfield Store");
 		}
-	
-}
+		
+		public void FAQ() throws Exception {
+			Thread.sleep(4000);
+			FAQSection.click();
+			Thread.sleep(2000);
+			int TotalQuestions=FAQQuestions.size();
+			Assert.assertEquals(TotalQuestions, 9);
+			System.out.println("Heading: "+FAQSectionTitle.getText());
+			for(WebElement FAQ: FAQQuestions) {
+			String text=FAQ.getText();	
+			System.out.println(text);
+			}
+		}
+		public void NearbyLocations() throws Exception {
+			Thread.sleep(4000);
+			NearbyLocations.click();
+			Thread.sleep(4000);
+			System.out.println("Heading: "+NearbyLocationTitle.getText());
+			Thread.sleep(2000);
+			Assert.assertEquals(NearbyLocationTitle.getText(), "More locations in the Westfield area");		
+			System.out.println(NearbyAddress.getText());
+			String Actaddress=NearbyAddress.getText();			
+			Assert.assertTrue(Actaddress.contains("1690 Route 22 East"));	
+		}
+		
+			public void AttServices() throws Exception {
+				Thread.sleep(4000);
+			System.out.println("Heading: "+AttServicesTitle.getText());
+			Thread.sleep(2000);
+			System.out.println("Total Number of Services provided=" +AttServices.size());
+			for(WebElement Attserv: AttServices) {
+			String serv=Attserv.getText();
+			System.out.println("Service Provided by AT&T: "+serv);
+				}
+			}
+			
+			public void FooterServices() throws Exception {
+				Thread.sleep(3000);
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+			Thread.sleep(1000);
+			for(WebElement Ftmenu: FooterMenu) {
+				String fmenu=Ftmenu.getText();
+				System.out.println("Footer Menues: "+fmenu);
+					}
+			
+			for (int i=0; i<FooterMenu.size(); i++) {
+				if(FooterMenu.get(i).getText().equalsIgnoreCase("Find a store"))
+				{
+					FooterMenu.get(i).click();
+					System.out.println("Clicked on link");
+				}
+			}
+			Thread.sleep(3000);
+			System.out.println(ATTPage.getText());
+			driver.navigate().back();
+			
+			}	
+		}

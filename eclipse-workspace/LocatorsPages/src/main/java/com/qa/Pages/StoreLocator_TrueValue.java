@@ -216,8 +216,8 @@ public class StoreLocator_TrueValue extends TestBase {
     		
     		for(WebElement ft:Filter)
     		{
-    			String FilterName=ft.getText();
     			ft.click();
+    			String FilterName=ft.getText();
     			System.out.println("Total address for: "+FilterName+ "are: "+TotalAddressCount.size());
         		Thread.sleep(5000);
     			ft.click();

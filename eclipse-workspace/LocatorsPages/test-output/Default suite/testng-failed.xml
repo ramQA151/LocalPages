@@ -5,11 +5,8 @@
     <classes>
       <class name="com.qa.Test.AttStoresTest">
         <methods>
-          <include name="VerifyATTPageLink"/>
-          <include name="VerifyFeedbackWindowClosed"/>
-          <include name="VerifyUpgradeDeviceLink"/>
+          <include name="VerifyOverviewSectionAddressOnMap"/>
           <include name="setUp"/>
-          <include name="VerifyGetSupportPageLink"/>
         </methods>
       </class> <!-- com.qa.Test.AttStoresTest -->
     </classes>
