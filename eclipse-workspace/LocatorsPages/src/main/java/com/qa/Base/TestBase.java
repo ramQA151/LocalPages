@@ -3,8 +3,6 @@ package com.qa.Base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.PageLoadStrategy;
@@ -14,6 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
+
+import com.qa.utils.Utilities;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
@@ -46,6 +47,8 @@ public class TestBase {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			//options.addArguments("window-size=1360,768");
+			options.addArguments("start-maximized");
+			options.addArguments("--window-size=1920,1080");
 
 			ChromeOptions cap = new ChromeOptions();
 			cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, UnexpectedAlertBehaviour.IGNORE);
@@ -85,6 +88,7 @@ public class TestBase {
 			driver = new FirefoxDriver();
 
 		}
+		driver.manage().timeouts().implicitlyWait(Utilities.IMPLICIT_WAIT_TIME,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);

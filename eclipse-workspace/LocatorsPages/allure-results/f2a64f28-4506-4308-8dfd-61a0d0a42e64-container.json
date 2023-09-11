@@ -1,0 +1,1 @@
+{"uuid":"f2a64f28-4506-4308-8dfd-61a0d0a42e64","name":"com.qa.Test.OfficeDepotTest","children":["11885aea-709d-42c7-8275-eb60c77116fb"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1694432842575,"stop":1694432844224}],"afters":[],"links":[],"start":1694432842549,"stop":1694432865509}
