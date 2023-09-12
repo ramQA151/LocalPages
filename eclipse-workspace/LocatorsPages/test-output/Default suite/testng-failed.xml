@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.Test.OfficeDepotTest">
+      <class name="com.qa.Test.MichalesTest">
         <methods>
+          <include name="VerifyServiceOptions"/>
           <include name="setUp"/>
-          <include name="VerifyDirectionLink"/>
+          <include name="VerifyHeaderText"/>
+          <include name="VerifyDDValues"/>
         </methods>
-      </class> <!-- com.qa.Test.OfficeDepotTest -->
+      </class> <!-- com.qa.Test.MichalesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

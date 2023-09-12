@@ -1,21 +1,437 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="43" passed="40" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-11T12:11:18Z" name="Default suite" finished-at="2023-09-11T12:12:01Z" duration-ms="43236">
+  <suite started-at="2023-09-12T12:27:03Z" name="Suite" finished-at="2023-09-12T12:42:04Z" duration-ms="901608">
     <groups>
     </groups>
-    <test started-at="2023-09-11T12:11:18Z" name="Default test" finished-at="2023-09-11T12:12:01Z" duration-ms="43236">
-      <class name="com.qa.Test.OfficeDepotTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.OfficeDepotTest@37b57b54]" started-at="2023-09-11T12:11:18Z" name="setUp" finished-at="2023-09-11T12:11:20Z" duration-ms="1566" status="PASS">
+    <test started-at="2023-09-12T12:27:03Z" name="AttStoresTest" finished-at="2023-09-12T12:28:54Z" duration-ms="111357">
+      <class name="com.qa.Test.AttStoresTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:03Z" name="setUp" finished-at="2023-09-12T12:27:04Z" duration-ms="1458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyDirectionLink()[pri:0, instance:com.qa.Test.OfficeDepotTest@37b57b54]" started-at="2023-09-11T12:11:20Z" name="VerifyDirectionLink" finished-at="2023-09-11T12:12:01Z" duration-ms="41585" status="PASS">
+        <test-method signature="VerifyFeedbackWindowClosed()[pri:1, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:04Z" name="VerifyFeedbackWindowClosed" finished-at="2023-09-12T12:27:12Z" duration-ms="8258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFeedbackWindowClosed -->
+        <test-method signature="VerifyHeading()[pri:2, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:12Z" name="VerifyHeading" finished-at="2023-09-12T12:27:12Z" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHeading -->
+        <test-method signature="VerifyPaymentLink()[pri:3, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:12Z" name="VerifyPaymentLink" finished-at="2023-09-12T12:27:14Z" duration-ms="1905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPaymentLink -->
+        <test-method signature="VerifyUpgradeDeviceLink()[pri:4, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:14Z" name="VerifyUpgradeDeviceLink" finished-at="2023-09-12T12:27:17Z" duration-ms="3039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUpgradeDeviceLink -->
+        <test-method signature="VerifyGetSupportPageLink()[pri:5, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:17Z" name="VerifyGetSupportPageLink" finished-at="2023-09-12T12:27:21Z" duration-ms="3882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGetSupportPageLink -->
+        <test-method signature="VerifyATTPageLink()[pri:6, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:21Z" name="VerifyATTPageLink" finished-at="2023-09-12T12:27:24Z" duration-ms="2602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyATTPageLink -->
+        <test-method signature="VerifyShopNowLink()[pri:7, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:24Z" name="VerifyShopNowLink" finished-at="2023-09-12T12:27:27Z" duration-ms="2960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyShopNowLink -->
+        <test-method signature="VerifyOverviewSectionTime()[pri:8, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:27Z" name="VerifyOverviewSectionTime" finished-at="2023-09-12T12:27:29Z" duration-ms="1824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOverviewSectionTime -->
+        <test-method signature="VerifyOverviewSectionAddress()[pri:9, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:29Z" name="VerifyOverviewSectionAddress" finished-at="2023-09-12T12:27:29Z" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOverviewSectionAddress -->
+        <test-method signature="VerifyOffersSectionTitle()[pri:10, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:29Z" name="VerifyOffersSectionTitle" finished-at="2023-09-12T12:27:31Z" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOffersSectionTitle -->
+        <test-method signature="VerifyAboutSectnTitle()[pri:11, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:31Z" name="VerifyAboutSectnTitle" finished-at="2023-09-12T12:27:33Z" duration-ms="2112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAboutSectnTitle -->
+        <test-method signature="VerifyFAQTitle()[pri:12, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:33Z" name="VerifyFAQTitle" finished-at="2023-09-12T12:27:33Z" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFAQTitle -->
+        <test-method signature="VerifyFAQQuestions()[pri:13, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:33Z" name="VerifyFAQQuestions" finished-at="2023-09-12T12:27:36Z" duration-ms="2202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFAQQuestions -->
+        <test-method signature="VerifyAttServices()[pri:14, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:36Z" name="VerifyAttServices" finished-at="2023-09-12T12:27:38Z" duration-ms="2268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAttServices -->
+        <test-method signature="VerifyFooterServices()[pri:15, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:27:38Z" name="VerifyFooterServices" finished-at="2023-09-12T12:28:16Z" duration-ms="38084" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#fsrHeading"}
+  (Session info: chrome=116.0.5845.182)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-OF3OC9C', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.182, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84a9bd16abaf15a889c0ef5afb67773e
+*** Element info: {Using=id, value=fsrHeading}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#fsrHeading"}
+  (Session info: chrome=116.0.5845.182)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-OF3OC9C', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.182, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84a9bd16abaf15a889c0ef5afb67773e
+*** Element info: {Using=id, value=fsrHeading}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+at com.qa.Pages.AttStores.FbWindow(AttStores.java:138)
+at com.qa.Pages.AttStores.FooterServices(AttStores.java:300)
+at com.qa.Test.AttStoresTest.VerifyFooterServices(AttStoresTest.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFooterServices -->
+        <test-method signature="VerifyOverviewSectionAddressOnMap()[pri:16, instance:com.qa.Test.AttStoresTest@5fcfca62]" started-at="2023-09-12T12:28:16Z" name="VerifyOverviewSectionAddressOnMap" finished-at="2023-09-12T12:28:54Z" duration-ms="38020" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#fsrHeading"}
+  (Session info: chrome=116.0.5845.182)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-OF3OC9C', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.182, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84a9bd16abaf15a889c0ef5afb67773e
+*** Element info: {Using=id, value=fsrHeading}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#fsrHeading"}
+  (Session info: chrome=116.0.5845.182)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-OF3OC9C', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.182, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84a9bd16abaf15a889c0ef5afb67773e
+*** Element info: {Using=id, value=fsrHeading}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+at com.qa.Pages.AttStores.FbWindow(AttStores.java:138)
+at com.qa.Pages.AttStores.OverviewTabAddressMap(AttStores.java:222)
+at com.qa.Test.AttStoresTest.VerifyOverviewSectionAddressOnMap(AttStoresTest.java:102)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOverviewSectionAddressOnMap -->
+      </class> <!-- com.qa.Test.AttStoresTest -->
+    </test> <!-- AttStoresTest -->
+    <test started-at="2023-09-12T12:28:54Z" name="MichalesTest" finished-at="2023-09-12T12:29:33Z" duration-ms="38897">
+      <class name="com.qa.Test.MichalesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.MichalesTest@42c28305]" started-at="2023-09-12T12:28:54Z" name="setUp" finished-at="2023-09-12T12:28:55Z" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyLogo()[pri:1, instance:com.qa.Test.MichalesTest@42c28305]" started-at="2023-09-12T12:28:55Z" name="VerifyLogo" finished-at="2023-09-12T12:28:56Z" duration-ms="1045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLogo -->
+        <test-method signature="VerifyAllLocations()[pri:2, instance:com.qa.Test.MichalesTest@42c28305]" started-at="2023-09-12T12:28:56Z" name="VerifyAllLocations" finished-at="2023-09-12T12:29:00Z" duration-ms="4700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllLocations -->
+        <test-method signature="VerifyDDValues()[pri:3, instance:com.qa.Test.MichalesTest@42c28305]" started-at="2023-09-12T12:29:00Z" name="VerifyDDValues" finished-at="2023-09-12T12:29:33Z" duration-ms="32448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDDValues -->
+        <test-method signature="VerifyHeaderText()[pri:4, instance:com.qa.Test.MichalesTest@42c28305]" started-at="2023-09-12T12:29:33Z" name="VerifyHeaderText" finished-at="2023-09-12T12:29:33Z" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHeaderText -->
+        <test-method signature="VerifyServiceOptions()[pri:5, instance:com.qa.Test.MichalesTest@42c28305]" started-at="2023-09-12T12:29:33Z" name="VerifyServiceOptions" finished-at="2023-09-12T12:29:33Z" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyServiceOptions -->
+      </class> <!-- com.qa.Test.MichalesTest -->
+    </test> <!-- MichalesTest -->
+    <test started-at="2023-09-12T12:29:33Z" name="OfficeDepotTest" finished-at="2023-09-12T12:36:42Z" duration-ms="428736">
+      <class name="com.qa.Test.OfficeDepotTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.OfficeDepotTest@2903c6ff]" started-at="2023-09-12T12:29:33Z" name="setUp" finished-at="2023-09-12T12:29:34Z" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyHeading()[pri:1, instance:com.qa.Test.OfficeDepotTest@2903c6ff]" started-at="2023-09-12T12:29:34Z" name="VerifyHeading" finished-at="2023-09-12T12:29:46Z" duration-ms="12095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHeading -->
+        <test-method signature="VerifyTotalLocations()[pri:2, instance:com.qa.Test.OfficeDepotTest@2903c6ff]" started-at="2023-09-12T12:29:46Z" name="VerifyTotalLocations" finished-at="2023-09-12T12:29:58Z" duration-ms="12146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTotalLocations -->
+        <test-method signature="VerifyTotalFilters()[pri:3, instance:com.qa.Test.OfficeDepotTest@2903c6ff]" started-at="2023-09-12T12:29:58Z" name="VerifyTotalFilters" finished-at="2023-09-12T12:35:04Z" duration-ms="306531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTotalFilters -->
+        <test-method signature="VerifyTotalFilterNames()[pri:4, instance:com.qa.Test.OfficeDepotTest@2903c6ff]" started-at="2023-09-12T12:35:04Z" name="VerifyTotalFilterNames" finished-at="2023-09-12T12:35:17Z" duration-ms="12275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTotalFilterNames -->
+        <test-method signature="VerifyDirectionLink()[pri:5, instance:com.qa.Test.OfficeDepotTest@2903c6ff]" started-at="2023-09-12T12:35:17Z" name="VerifyDirectionLink" finished-at="2023-09-12T12:36:42Z" duration-ms="85043" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='lightwindow_title_bar_close_link']"}
+  (Session info: chrome=116.0.5845.182)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-OF3OC9C', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.182, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df4785191ac0d9046fb336b4a4be01f0
+*** Element info: {Using=xpath, value=//a[@id='lightwindow_title_bar_close_link']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='lightwindow_title_bar_close_link']"}
+  (Session info: chrome=116.0.5845.182)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-OF3OC9C', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.182, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df4785191ac0d9046fb336b4a4be01f0
+*** Element info: {Using=xpath, value=//a[@id='lightwindow_title_bar_close_link']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.qa.Pages.OfficeDepot.Direction(OfficeDepot.java:168)
+at com.qa.Test.OfficeDepotTest.VerifyDirectionLink(OfficeDepotTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyDirectionLink -->
       </class> <!-- com.qa.Test.OfficeDepotTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- OfficeDepotTest -->
+    <test started-at="2023-09-12T12:36:42Z" name="StoreLocations_FamilyDollarTest" finished-at="2023-09-12T12:39:35Z" duration-ms="173542">
+      <class name="com.qa.Test.StoreLocations_FamilyDollarTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:36:42Z" name="setUp" finished-at="2023-09-12T12:36:42Z" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyFilterBtn()[pri:0, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:36:42Z" name="VerifyFilterBtn" finished-at="2023-09-12T12:36:50Z" duration-ms="7990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFilterBtn -->
+        <test-method signature="VerifyTitalAminities()[pri:1, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:36:50Z" name="VerifyTitalAminities" finished-at="2023-09-12T12:36:54Z" duration-ms="4132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTitalAminities -->
+        <test-method signature="VerifyMoreInfoLink()[pri:2, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:36:54Z" name="VerifyMoreInfoLink" finished-at="2023-09-12T12:37:03Z" duration-ms="8239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyMoreInfoLink -->
+        <test-method signature="VerifyWeeklyAddLink()[pri:3, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:37:03Z" name="VerifyWeeklyAddLink" finished-at="2023-09-12T12:37:11Z" duration-ms="8216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyWeeklyAddLink -->
+        <test-method signature="VerifyFilterOptions()[pri:4, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:37:11Z" name="VerifyFilterOptions" finished-at="2023-09-12T12:37:18Z" duration-ms="7180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFilterOptions -->
+        <test-method signature="VerifyListofAddress()[pri:5, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:37:18Z" name="VerifyListofAddress" finished-at="2023-09-12T12:37:22Z" duration-ms="4196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyListofAddress -->
+        <test-method signature="VerifyRerirectingtoMap()[pri:6, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:37:22Z" name="VerifyRerirectingtoMap" finished-at="2023-09-12T12:37:29Z" duration-ms="7177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRerirectingtoMap -->
+        <test-method signature="VerifyOpenLocatorPage()[pri:7, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:37:29Z" name="VerifyOpenLocatorPage" finished-at="2023-09-12T12:37:39Z" duration-ms="9355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOpenLocatorPage -->
+        <test-method signature="VerifyClickingFilterOptions()[pri:8, instance:com.qa.Test.StoreLocations_FamilyDollarTest@260ff5b7]" started-at="2023-09-12T12:37:39Z" name="VerifyClickingFilterOptions" finished-at="2023-09-12T12:39:35Z" duration-ms="116399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyClickingFilterOptions -->
+      </class> <!-- com.qa.Test.StoreLocations_FamilyDollarTest -->
+    </test> <!-- StoreLocations_FamilyDollarTest -->
+    <test started-at="2023-09-12T12:39:35Z" name="StoreLocator_TrueValueTest" finished-at="2023-09-12T12:42:04Z" duration-ms="149039">
+      <class name="com.qa.Test.StoreLocator_TrueValueTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:39:35Z" name="setUp" finished-at="2023-09-12T12:39:36Z" duration-ms="906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyOpenLocatorPage()[pri:1, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:39:36Z" name="VerifyOpenLocatorPage" finished-at="2023-09-12T12:39:56Z" duration-ms="20336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOpenLocatorPage -->
+        <test-method signature="VerifyTextFrame()[pri:2, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:39:56Z" name="VerifyTextFrame" finished-at="2023-09-12T12:40:16Z" duration-ms="19587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTextFrame -->
+        <test-method signature="VerifyTotalAddresses()[pri:3, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:40:16Z" name="VerifyTotalAddresses" finished-at="2023-09-12T12:40:28Z" duration-ms="11563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTotalAddresses -->
+        <test-method signature="VerifyEmailWindow()[pri:4, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:40:28Z" name="VerifyEmailWindow" finished-at="2023-09-12T12:40:46Z" duration-ms="18168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEmailWindow -->
+        <test-method signature="VerifyDropdownForCountry()[pri:5, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:40:46Z" name="VerifyDropdownForCountry" finished-at="2023-09-12T12:40:57Z" duration-ms="11454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDropdownForCountry -->
+        <test-method signature="VerifyFilters()[pri:6, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:40:57Z" name="VerifyFilters" finished-at="2023-09-12T12:41:42Z" duration-ms="44859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFilters -->
+        <test-method signature="VerifyAddress()[pri:7, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:41:42Z" name="VerifyAddress" finished-at="2023-09-12T12:41:49Z" duration-ms="7225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddress -->
+        <test-method signature="VerifyStoreRedirect()[pri:8, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:41:49Z" name="VerifyStoreRedirect" finished-at="2023-09-12T12:42:04Z" duration-ms="14870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStoreRedirect -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Test.StoreLocator_TrueValueTest@332820f4]" started-at="2023-09-12T12:42:04Z" name="tearDown" finished-at="2023-09-12T12:42:04Z" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.Test.StoreLocator_TrueValueTest -->
+    </test> <!-- StoreLocator_TrueValueTest -->
+  </suite> <!-- Suite -->
 </testng-results>

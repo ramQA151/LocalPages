@@ -1,0 +1,1 @@
+{"uuid":"a4768306-3189-4239-9b8e-51c127d929a9","name":"com.qa.Test.MichalesTest","children":["b788753b-83cf-4284-b662-69e0f16387f2"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1694515994541,"stop":1694515996071}],"afters":[],"links":[],"start":1694515994518,"stop":1694516002044}

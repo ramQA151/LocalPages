@@ -6,7 +6,7 @@ import com.qa.Base.TestBase;
 import com.qa.Pages.OfficeDepot;
 
 public class OfficeDepotTest extends TestBase{
-	OfficeDepot OffDept;
+	OfficeDepot OfficeDept;
 
 	public OfficeDepotTest() {
 		super();
@@ -15,26 +15,31 @@ public class OfficeDepotTest extends TestBase{
 	@BeforeClass
 	public void setUp() {
 		initialization();
-		OffDept = new OfficeDepot(driver);
+		OfficeDept = new OfficeDepot(driver);
 		driver.get(prop.getProperty("OfficeDepot"));
 
-		
+		//.
 		}
-	@Test
+	@Test (priority=1)
 	public void VerifyHeading() throws Exception {
-		OffDept.EnterZip();
+		OfficeDept.EnterZip();
 	}
-	@Test
+	@Test(priority=2)
 	public void VerifyTotalLocations() throws Exception {
-		OffDept.TotalLocations();
+		OfficeDept.TotalLocations();
 	}
-	@Test
+	@Test(priority=3)
 	public void VerifyTotalFilters() throws Exception {
-		OffDept.TotalFilters();
+		OfficeDept.TotalFilters();
+	}
+
+	@Test(priority=4)
+	public void VerifyTotalFilterNames() throws Exception {
+		OfficeDept.TotalFilterNames();
 	}
 	
-	@Test
+	@Test(priority=5)
 	public void VerifyDirectionLink() throws Exception {
-		OffDept.Direction();
+		OfficeDept.Direction();
 	}
 }
