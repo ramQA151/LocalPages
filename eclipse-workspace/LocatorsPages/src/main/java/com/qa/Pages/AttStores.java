@@ -219,7 +219,6 @@ public class AttStores extends TestBase {
 	}
 
 	public void OverviewTabAddressMap() throws Exception {
-		FbWindow();
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1000)");
@@ -297,7 +296,7 @@ public class AttStores extends TestBase {
 	}
 
 	public void FooterServices() throws Exception {
-		FbWindow();
+		
 		Thread.sleep(3000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");

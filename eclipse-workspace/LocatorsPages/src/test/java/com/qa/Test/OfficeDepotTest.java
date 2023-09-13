@@ -1,5 +1,6 @@
 package com.qa.Test;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.qa.Base.TestBase;
@@ -41,5 +42,10 @@ public class OfficeDepotTest extends TestBase{
 	@Test(priority=5)
 	public void VerifyDirectionLink() throws Exception {
 		OfficeDept.Direction();
+	}
+
+	@AfterClass
+	public void Tearown() {
+		driver.close();
 	}
 }

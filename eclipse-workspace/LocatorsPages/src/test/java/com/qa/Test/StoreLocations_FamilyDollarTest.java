@@ -1,5 +1,6 @@
 package com.qa.Test;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.qa.Base.TestBase;
@@ -67,4 +68,9 @@ public class StoreLocations_FamilyDollarTest extends TestBase {
 	public void VerifyRerirectingtoMap() throws Exception {
 		StoreLocation.MapDirection();
 		}
+
+	@AfterClass
+	public void Tearown() {
+		driver.close();
+	}
 }

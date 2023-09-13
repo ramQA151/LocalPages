@@ -1,5 +1,6 @@
 package com.qa.Test;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.qa.Base.TestBase;
@@ -43,6 +44,10 @@ public class MichalesTest extends TestBase{
 	public void VerifyServiceOptions() throws Exception {
 	Mic.ServiceOptions();
 }
-	
+
+	@AfterClass
+	public void Tearown() {
+		driver.close();
+	}
 	
 }

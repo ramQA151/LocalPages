@@ -14,13 +14,6 @@
 </classes>
 </test>
 
-
-<test name="OfficeDepotTest">
-<classes>
-<class name="com.qa.Test.OfficeDepotTest"></class>
-</classes>
-</test>
-  
   
  <test name="StoreLocations_FamilyDollarTest">
 <classes>
@@ -31,6 +24,12 @@
   <test name="StoreLocator_TrueValueTest">
 <classes>
 <class name="com.qa.Test.StoreLocator_TrueValueTest"></class>
+</classes>
+</test>
+
+<test name="OfficeDepotTest">
+<classes>
+<class name="com.qa.Test.OfficeDepotTest"></class>
 </classes>
 </test>
   

@@ -71,7 +71,7 @@ public class OfficeDepot extends TestBase {
 	@FindBy(xpath="//div[@class='divmargin']")
 	WebElement ConformationMessage;
 	
-	@FindBy(xpath="//a[@id='lightwindow_title_bar_close_link']")
+	@FindBy(xpath="//*[@id='lightwindow_title_bar_close_link']")
 	WebElement CloseBtn;
 
 	public OfficeDepot(WebDriver driver) {
@@ -165,7 +165,7 @@ public class OfficeDepot extends TestBase {
 		Thread.sleep(2000);
 		System.out.println("--------------------------------");
 		System.out.println(ConformationMessage.getText());
-		CloseBtn.click();
+		//CloseBtn.click();
 		
 		
 	}

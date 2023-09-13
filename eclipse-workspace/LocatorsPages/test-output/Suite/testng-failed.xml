@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="AttStoresTest(failed)">
-    <classes>
-      <class name="com.qa.Test.AttStoresTest">
-        <methods>
-          <include name="VerifyOverviewSectionAddressOnMap"/>
-          <include name="setUp"/>
-          <include name="VerifyFooterServices"/>
-        </methods>
-      </class> <!-- com.qa.Test.AttStoresTest -->
-    </classes>
-  </test> <!-- AttStoresTest(failed) -->
   <test thread-count="5" name="OfficeDepotTest(failed)">
     <classes>
       <class name="com.qa.Test.OfficeDepotTest">
