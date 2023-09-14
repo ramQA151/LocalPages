@@ -32,5 +32,11 @@
 <class name="com.qa.Test.OfficeDepotTest"></class>
 </classes>
 </test>
+
+<test name="BenJerry_LocatorpageTest">
+<classes>
+<class name="com.qa.Test.BenJerry_LocatorpageTest"></class>
+</classes>
+</test>
   
 </suite> <!-- Suite -->

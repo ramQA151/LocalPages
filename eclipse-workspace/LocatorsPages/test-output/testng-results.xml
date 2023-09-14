@@ -1,85 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+<testng-results ignored="0" total="50" passed="50" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-13T10:27:26Z" name="Default suite" finished-at="2023-09-13T10:28:19Z" duration-ms="53203">
+  <suite started-at="2023-09-14T05:36:48Z" name="Suite" finished-at="2023-09-14T05:51:25Z" duration-ms="876912">
     <groups>
     </groups>
-    <test started-at="2023-09-13T10:27:26Z" name="Default test" finished-at="2023-09-13T10:28:19Z" duration-ms="53203">
+    <test started-at="2023-09-14T05:36:48Z" name="AttStoresTest" finished-at="2023-09-14T05:37:48Z" duration-ms="60271">
       <class name="com.qa.Test.AttStoresTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:26Z" name="setUp" finished-at="2023-09-13T10:27:27Z" duration-ms="1495" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:36:48Z" name="setUp" finished-at="2023-09-14T05:36:50Z" duration-ms="1551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyFeedbackWindowClosed()[pri:1, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:27Z" name="VerifyFeedbackWindowClosed" finished-at="2023-09-13T10:27:35Z" duration-ms="8238" status="PASS">
+        <test-method signature="VerifyFeedbackWindowClosed()[pri:1, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:36:50Z" name="VerifyFeedbackWindowClosed" finished-at="2023-09-14T05:36:58Z" duration-ms="8219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFeedbackWindowClosed -->
-        <test-method signature="VerifyHeading()[pri:2, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:35Z" name="VerifyHeading" finished-at="2023-09-13T10:27:35Z" duration-ms="21" status="PASS">
+        <test-method signature="VerifyHeading()[pri:2, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:36:58Z" name="VerifyHeading" finished-at="2023-09-14T05:36:58Z" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyHeading -->
-        <test-method signature="VerifyPaymentLink()[pri:3, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:35Z" name="VerifyPaymentLink" finished-at="2023-09-13T10:27:37Z" duration-ms="1798" status="PASS">
+        <test-method signature="VerifyPaymentLink()[pri:3, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:36:58Z" name="VerifyPaymentLink" finished-at="2023-09-14T05:37:01Z" duration-ms="3538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPaymentLink -->
-        <test-method signature="VerifyUpgradeDeviceLink()[pri:4, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:37Z" name="VerifyUpgradeDeviceLink" finished-at="2023-09-13T10:27:42Z" duration-ms="4641" status="PASS">
+        <test-method signature="VerifyUpgradeDeviceLink()[pri:4, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:01Z" name="VerifyUpgradeDeviceLink" finished-at="2023-09-14T05:37:08Z" duration-ms="6565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUpgradeDeviceLink -->
-        <test-method signature="VerifyGetSupportPageLink()[pri:5, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:42Z" name="VerifyGetSupportPageLink" finished-at="2023-09-13T10:27:44Z" duration-ms="2464" status="PASS">
+        <test-method signature="VerifyGetSupportPageLink()[pri:5, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:08Z" name="VerifyGetSupportPageLink" finished-at="2023-09-14T05:37:11Z" duration-ms="2485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyGetSupportPageLink -->
-        <test-method signature="VerifyATTPageLink()[pri:6, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:44Z" name="VerifyATTPageLink" finished-at="2023-09-13T10:27:47Z" duration-ms="3170" status="PASS">
+        <test-method signature="VerifyATTPageLink()[pri:6, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:11Z" name="VerifyATTPageLink" finished-at="2023-09-14T05:37:15Z" duration-ms="4342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyATTPageLink -->
-        <test-method signature="VerifyShopNowLink()[pri:7, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:47Z" name="VerifyShopNowLink" finished-at="2023-09-13T10:27:50Z" duration-ms="2260" status="PASS">
+        <test-method signature="VerifyShopNowLink()[pri:7, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:15Z" name="VerifyShopNowLink" finished-at="2023-09-14T05:37:19Z" duration-ms="4166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyShopNowLink -->
-        <test-method signature="VerifyOverviewSectionTime()[pri:8, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:50Z" name="VerifyOverviewSectionTime" finished-at="2023-09-13T10:27:51Z" duration-ms="1791" status="PASS">
+        <test-method signature="VerifyOverviewSectionTime()[pri:8, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:19Z" name="VerifyOverviewSectionTime" finished-at="2023-09-14T05:37:21Z" duration-ms="1884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOverviewSectionTime -->
-        <test-method signature="VerifyOverviewSectionAddress()[pri:9, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:51Z" name="VerifyOverviewSectionAddress" finished-at="2023-09-13T10:27:52Z" duration-ms="831" status="PASS">
+        <test-method signature="VerifyOverviewSectionAddress()[pri:9, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:21Z" name="VerifyOverviewSectionAddress" finished-at="2023-09-14T05:37:21Z" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOverviewSectionAddress -->
-        <test-method signature="VerifyOffersSectionTitle()[pri:10, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:52Z" name="VerifyOffersSectionTitle" finished-at="2023-09-13T10:27:54Z" duration-ms="2157" status="PASS">
+        <test-method signature="VerifyOffersSectionTitle()[pri:10, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:21Z" name="VerifyOffersSectionTitle" finished-at="2023-09-14T05:37:23Z" duration-ms="2225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOffersSectionTitle -->
-        <test-method signature="VerifyAboutSectnTitle()[pri:11, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:54Z" name="VerifyAboutSectnTitle" finished-at="2023-09-13T10:27:57Z" duration-ms="2111" status="PASS">
+        <test-method signature="VerifyAboutSectnTitle()[pri:11, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:23Z" name="VerifyAboutSectnTitle" finished-at="2023-09-14T05:37:26Z" duration-ms="2115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAboutSectnTitle -->
-        <test-method signature="VerifyFAQTitle()[pri:12, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:57Z" name="VerifyFAQTitle" finished-at="2023-09-13T10:27:57Z" duration-ms="163" status="PASS">
+        <test-method signature="VerifyFAQTitle()[pri:12, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:26Z" name="VerifyFAQTitle" finished-at="2023-09-14T05:37:26Z" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFAQTitle -->
-        <test-method signature="VerifyFAQQuestions()[pri:13, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:57Z" name="VerifyFAQQuestions" finished-at="2023-09-13T10:27:59Z" duration-ms="2194" status="PASS">
+        <test-method signature="VerifyFAQQuestions()[pri:13, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:26Z" name="VerifyFAQQuestions" finished-at="2023-09-14T05:37:28Z" duration-ms="2182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFAQQuestions -->
-        <test-method signature="VerifyAttServices()[pri:14, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:27:59Z" name="VerifyAttServices" finished-at="2023-09-13T10:28:01Z" duration-ms="2262" status="PASS">
+        <test-method signature="VerifyAttServices()[pri:14, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:28Z" name="VerifyAttServices" finished-at="2023-09-14T05:37:30Z" duration-ms="2233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAttServices -->
-        <test-method signature="VerifyFooterServices()[pri:15, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:28:01Z" name="VerifyFooterServices" finished-at="2023-09-13T10:28:12Z" duration-ms="11130" status="PASS">
+        <test-method signature="VerifyFooterServices()[pri:15, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:30Z" name="VerifyFooterServices" finished-at="2023-09-14T05:37:42Z" duration-ms="11521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFooterServices -->
-        <test-method signature="VerifyOverviewSectionAddressOnMap()[pri:16, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:28:12Z" name="VerifyOverviewSectionAddressOnMap" finished-at="2023-09-13T10:28:19Z" duration-ms="6240" status="PASS">
+        <test-method signature="VerifyOverviewSectionAddressOnMap()[pri:16, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:42Z" name="VerifyOverviewSectionAddressOnMap" finished-at="2023-09-14T05:37:48Z" duration-ms="6531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOverviewSectionAddressOnMap -->
-        <test-method is-config="true" signature="Tearown()[pri:0, instance:com.qa.Test.AttStoresTest@24934262]" started-at="2023-09-13T10:28:19Z" name="Tearown" finished-at="2023-09-13T10:28:19Z" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="Tearown()[pri:0, instance:com.qa.Test.AttStoresTest@27e5b378]" started-at="2023-09-14T05:37:48Z" name="Tearown" finished-at="2023-09-14T05:37:48Z" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tearown -->
       </class> <!-- com.qa.Test.AttStoresTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- AttStoresTest -->
+    <test started-at="2023-09-14T05:37:48Z" name="MichalesTest" finished-at="2023-09-14T05:38:28Z" duration-ms="39445">
+      <class name="com.qa.Test.MichalesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.MichalesTest@d8d9199]" started-at="2023-09-14T05:37:48Z" name="setUp" finished-at="2023-09-14T05:37:49Z" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyLogo()[pri:1, instance:com.qa.Test.MichalesTest@d8d9199]" started-at="2023-09-14T05:37:49Z" name="VerifyLogo" finished-at="2023-09-14T05:37:50Z" duration-ms="1147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLogo -->
+        <test-method signature="VerifyAllLocations()[pri:2, instance:com.qa.Test.MichalesTest@d8d9199]" started-at="2023-09-14T05:37:50Z" name="VerifyAllLocations" finished-at="2023-09-14T05:37:55Z" duration-ms="4676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllLocations -->
+        <test-method signature="VerifyDDValues()[pri:3, instance:com.qa.Test.MichalesTest@d8d9199]" started-at="2023-09-14T05:37:55Z" name="VerifyDDValues" finished-at="2023-09-14T05:38:28Z" duration-ms="32728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDDValues -->
+        <test-method signature="VerifyHeaderText()[pri:4, instance:com.qa.Test.MichalesTest@d8d9199]" started-at="2023-09-14T05:38:28Z" name="VerifyHeaderText" finished-at="2023-09-14T05:38:28Z" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHeaderText -->
+        <test-method signature="VerifyServiceOptions()[pri:5, instance:com.qa.Test.MichalesTest@d8d9199]" started-at="2023-09-14T05:38:28Z" name="VerifyServiceOptions" finished-at="2023-09-14T05:38:28Z" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyServiceOptions -->
+        <test-method is-config="true" signature="Tearown()[pri:0, instance:com.qa.Test.MichalesTest@d8d9199]" started-at="2023-09-14T05:38:28Z" name="Tearown" finished-at="2023-09-14T05:38:28Z" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tearown -->
+      </class> <!-- com.qa.Test.MichalesTest -->
+    </test> <!-- MichalesTest -->
+    <test started-at="2023-09-14T05:38:28Z" name="StoreLocations_FamilyDollarTest" finished-at="2023-09-14T05:41:20Z" duration-ms="172667">
+      <class name="com.qa.Test.StoreLocations_FamilyDollarTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:38:28Z" name="setUp" finished-at="2023-09-14T05:38:28Z" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyFilterBtn()[pri:0, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:38:28Z" name="VerifyFilterBtn" finished-at="2023-09-14T05:38:35Z" duration-ms="6959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFilterBtn -->
+        <test-method signature="VerifyTitalAminities()[pri:1, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:38:35Z" name="VerifyTitalAminities" finished-at="2023-09-14T05:38:40Z" duration-ms="4177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTitalAminities -->
+        <test-method signature="VerifyMoreInfoLink()[pri:2, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:38:40Z" name="VerifyMoreInfoLink" finished-at="2023-09-14T05:38:48Z" duration-ms="8346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyMoreInfoLink -->
+        <test-method signature="VerifyWeeklyAddLink()[pri:3, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:38:48Z" name="VerifyWeeklyAddLink" finished-at="2023-09-14T05:38:56Z" duration-ms="8245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyWeeklyAddLink -->
+        <test-method signature="VerifyFilterOptions()[pri:4, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:38:56Z" name="VerifyFilterOptions" finished-at="2023-09-14T05:39:03Z" duration-ms="7213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFilterOptions -->
+        <test-method signature="VerifyListofAddress()[pri:5, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:39:03Z" name="VerifyListofAddress" finished-at="2023-09-14T05:39:08Z" duration-ms="4214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyListofAddress -->
+        <test-method signature="VerifyRerirectingtoMap()[pri:6, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:39:08Z" name="VerifyRerirectingtoMap" finished-at="2023-09-14T05:39:15Z" duration-ms="7275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRerirectingtoMap -->
+        <test-method signature="VerifyOpenLocatorPage()[pri:7, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:39:15Z" name="VerifyOpenLocatorPage" finished-at="2023-09-14T05:39:24Z" duration-ms="9176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOpenLocatorPage -->
+        <test-method signature="VerifyClickingFilterOptions()[pri:8, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:39:24Z" name="VerifyClickingFilterOptions" finished-at="2023-09-14T05:41:20Z" duration-ms="116315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyClickingFilterOptions -->
+        <test-method is-config="true" signature="Tearown()[pri:0, instance:com.qa.Test.StoreLocations_FamilyDollarTest@58860997]" started-at="2023-09-14T05:41:20Z" name="Tearown" finished-at="2023-09-14T05:41:20Z" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tearown -->
+      </class> <!-- com.qa.Test.StoreLocations_FamilyDollarTest -->
+    </test> <!-- StoreLocations_FamilyDollarTest -->
+    <test started-at="2023-09-14T05:41:20Z" name="StoreLocator_TrueValueTest" finished-at="2023-09-14T05:43:45Z" duration-ms="144904">
+      <class name="com.qa.Test.StoreLocator_TrueValueTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:41:20Z" name="setUp" finished-at="2023-09-14T05:41:21Z" duration-ms="715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyOpenLocatorPage()[pri:1, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:41:21Z" name="VerifyOpenLocatorPage" finished-at="2023-09-14T05:41:39Z" duration-ms="18201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOpenLocatorPage -->
+        <test-method signature="VerifyTextFrame()[pri:2, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:41:39Z" name="VerifyTextFrame" finished-at="2023-09-14T05:41:59Z" duration-ms="19503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTextFrame -->
+        <test-method signature="VerifyTotalAddresses()[pri:3, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:41:59Z" name="VerifyTotalAddresses" finished-at="2023-09-14T05:42:10Z" duration-ms="11484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTotalAddresses -->
+        <test-method signature="VerifyEmailWindow()[pri:4, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:42:10Z" name="VerifyEmailWindow" finished-at="2023-09-14T05:42:29Z" duration-ms="18360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEmailWindow -->
+        <test-method signature="VerifyDropdownForCountry()[pri:5, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:42:29Z" name="VerifyDropdownForCountry" finished-at="2023-09-14T05:42:40Z" duration-ms="11306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDropdownForCountry -->
+        <test-method signature="VerifyFilters()[pri:6, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:42:40Z" name="VerifyFilters" finished-at="2023-09-14T05:43:24Z" duration-ms="43761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFilters -->
+        <test-method signature="VerifyAddress()[pri:7, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:43:24Z" name="VerifyAddress" finished-at="2023-09-14T05:43:31Z" duration-ms="7208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddress -->
+        <test-method signature="VerifyStoreRedirect()[pri:8, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:43:31Z" name="VerifyStoreRedirect" finished-at="2023-09-14T05:43:45Z" duration-ms="14288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStoreRedirect -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Test.StoreLocator_TrueValueTest@7a7cc52c]" started-at="2023-09-14T05:43:45Z" name="tearDown" finished-at="2023-09-14T05:43:45Z" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.Test.StoreLocator_TrueValueTest -->
+    </test> <!-- StoreLocator_TrueValueTest -->
+    <test started-at="2023-09-14T05:43:45Z" name="OfficeDepotTest" finished-at="2023-09-14T05:50:25Z" duration-ms="399524">
+      <class name="com.qa.Test.OfficeDepotTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.OfficeDepotTest@bfc14b9]" started-at="2023-09-14T05:43:45Z" name="setUp" finished-at="2023-09-14T05:43:46Z" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyHeading()[pri:1, instance:com.qa.Test.OfficeDepotTest@bfc14b9]" started-at="2023-09-14T05:43:46Z" name="VerifyHeading" finished-at="2023-09-14T05:43:58Z" duration-ms="12201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHeading -->
+        <test-method signature="VerifyTotalLocations()[pri:2, instance:com.qa.Test.OfficeDepotTest@bfc14b9]" started-at="2023-09-14T05:43:58Z" name="VerifyTotalLocations" finished-at="2023-09-14T05:44:10Z" duration-ms="12256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTotalLocations -->
+        <test-method signature="VerifyTotalFilters()[pri:3, instance:com.qa.Test.OfficeDepotTest@bfc14b9]" started-at="2023-09-14T05:44:10Z" name="VerifyTotalFilters" finished-at="2023-09-14T05:49:18Z" duration-ms="307041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTotalFilters -->
+        <test-method signature="VerifyTotalFilterNames()[pri:4, instance:com.qa.Test.OfficeDepotTest@bfc14b9]" started-at="2023-09-14T05:49:18Z" name="VerifyTotalFilterNames" finished-at="2023-09-14T05:49:30Z" duration-ms="12271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTotalFilterNames -->
+        <test-method signature="VerifyDirectionLink()[pri:5, instance:com.qa.Test.OfficeDepotTest@bfc14b9]" started-at="2023-09-14T05:49:30Z" name="VerifyDirectionLink" finished-at="2023-09-14T05:50:25Z" duration-ms="55013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDirectionLink -->
+        <test-method is-config="true" signature="Tearown()[pri:0, instance:com.qa.Test.OfficeDepotTest@bfc14b9]" started-at="2023-09-14T05:50:25Z" name="Tearown" finished-at="2023-09-14T05:50:25Z" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tearown -->
+      </class> <!-- com.qa.Test.OfficeDepotTest -->
+    </test> <!-- OfficeDepotTest -->
+    <test started-at="2023-09-14T05:50:25Z" name="BenJerry_LocatorpageTest" finished-at="2023-09-14T05:51:25Z" duration-ms="60065">
+      <class name="com.qa.Test.BenJerry_LocatorpageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.BenJerry_LocatorpageTest@34b27915]" started-at="2023-09-14T05:50:25Z" name="setUp" finished-at="2023-09-14T05:50:26Z" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyHomePage()[pri:1, instance:com.qa.Test.BenJerry_LocatorpageTest@34b27915]" started-at="2023-09-14T05:50:26Z" name="VerifyHomePage" finished-at="2023-09-14T05:50:48Z" duration-ms="22316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePage -->
+        <test-method signature="VerifySelectedAddress()[pri:2, instance:com.qa.Test.BenJerry_LocatorpageTest@34b27915]" started-at="2023-09-14T05:50:48Z" name="VerifySelectedAddress" finished-at="2023-09-14T05:50:54Z" duration-ms="6166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySelectedAddress -->
+        <test-method signature="VerifyAllFoundLocations()[pri:3, instance:com.qa.Test.BenJerry_LocatorpageTest@34b27915]" started-at="2023-09-14T05:50:54Z" name="VerifyAllFoundLocations" finished-at="2023-09-14T05:50:54Z" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllFoundLocations -->
+        <test-method signature="VerifySelectedLocationDetails_StoreName()[pri:4, instance:com.qa.Test.BenJerry_LocatorpageTest@34b27915]" started-at="2023-09-14T05:50:54Z" name="VerifySelectedLocationDetails_StoreName" finished-at="2023-09-14T05:50:59Z" duration-ms="4482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySelectedLocationDetails_StoreName -->
+        <test-method signature="VerifySelectedLocationDetails_GetDirections()[pri:5, instance:com.qa.Test.BenJerry_LocatorpageTest@34b27915]" started-at="2023-09-14T05:50:59Z" name="VerifySelectedLocationDetails_GetDirections" finished-at="2023-09-14T05:51:07Z" duration-ms="8154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySelectedLocationDetails_GetDirections -->
+        <test-method signature="VerifySelectedLocationDetails_StoreHours()[pri:6, instance:com.qa.Test.BenJerry_LocatorpageTest@34b27915]" started-at="2023-09-14T05:51:07Z" name="VerifySelectedLocationDetails_StoreHours" finished-at="2023-09-14T05:51:12Z" duration-ms="5097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySelectedLocationDetails_StoreHours -->
+        <test-method signature="VerifySelectedLocationDetails_ScoopShopWebsite()[pri:7, instance:com.qa.Test.BenJerry_LocatorpageTest@34b27915]" started-at="2023-09-14T05:51:12Z" name="VerifySelectedLocationDetails_ScoopShopWebsite" finished-at="2023-09-14T05:51:25Z" duration-ms="12780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySelectedLocationDetails_ScoopShopWebsite -->
+      </class> <!-- com.qa.Test.BenJerry_LocatorpageTest -->
+    </test> <!-- BenJerry_LocatorpageTest -->
+  </suite> <!-- Suite -->
 </testng-results>
