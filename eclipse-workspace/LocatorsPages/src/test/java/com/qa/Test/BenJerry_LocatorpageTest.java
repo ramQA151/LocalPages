@@ -56,11 +56,11 @@ public class BenJerry_LocatorpageTest extends TestBase {
 	}
 
 	
-	/*
-	 * @Test(priority = 8) public void
-	 * VerifySelectedLocationDetails_OrderTakeOut()throws InterruptedException {
-	 * benJerry_LocatorPage.VerifySelectedLocationDetails_OrderTakeOut(); }
-	 */
+	
+	 @Test(priority = 8) public void
+	 VerifySelectedLocationDetails_OrderTakeOut()throws InterruptedException {
+	 benJerry_LocatorPage.VerifySelectedLocationDetails_OrderTakeOut(); }
+	 
 	 
 	 
 	

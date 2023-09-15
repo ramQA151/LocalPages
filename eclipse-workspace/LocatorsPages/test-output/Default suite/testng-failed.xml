@@ -3,23 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.Test.AttStoresTest">
+      <class name="com.qa.Test.TheNorthFaceStoreLocator_test">
         <methods>
-          <include name="VerifyAttServices"/>
-          <include name="VerifyShopNowLink"/>
-          <include name="VerifyAboutSectnTitle"/>
-          <include name="VerifyFAQQuestions"/>
-          <include name="VerifyGetSupportPageLink"/>
-          <include name="VerifyATTPageLink"/>
-          <include name="VerifyOverviewSectionAddressOnMap"/>
-          <include name="VerifyOverviewSectionTime"/>
-          <include name="VerifyFAQTitle"/>
-          <include name="setUp"/>
-          <include name="Tearown"/>
-          <include name="VerifyOffersSectionTitle"/>
-          <include name="VerifyOverviewSectionAddress"/>
+          <include name="verifyFindstore_test"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.Test.AttStoresTest -->
+      </class> <!-- com.qa.Test.TheNorthFaceStoreLocator_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
