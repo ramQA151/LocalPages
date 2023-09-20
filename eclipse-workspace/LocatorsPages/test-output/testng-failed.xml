@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.Test.TheNorthFaceStoreLocator_test">
+      <class name="com.qa.Test.TheCheeseCakeFactoryTest">
         <methods>
-          <include name="verifyFindstore_test"/>
-          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="VerifyOrderDeliveryPagetitle"/>
+          <include name="VerifyFooterMenu"/>
+          <include name="VerifyOrderDelivery"/>
+          <include name="VerifyOrderPickUp"/>
+          <include name="VerifyRewardsPagetitle"/>
         </methods>
-      </class> <!-- com.qa.Test.TheNorthFaceStoreLocator_test -->
+      </class> <!-- com.qa.Test.TheCheeseCakeFactoryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

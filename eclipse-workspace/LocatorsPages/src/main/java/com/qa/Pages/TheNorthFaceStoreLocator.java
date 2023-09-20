@@ -2,9 +2,11 @@ package com.qa.Pages;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -44,21 +46,39 @@ public class TheNorthFaceStoreLocator {
 	@FindBy(xpath = "//a[@aria-label='Show cart']//*[name()='svg']")
 	WebElement cart;
 
-	@FindBy(id="search_input")
+	@FindBy(xpath = "//input[@id='search_input']")
 	WebElement SearchField;
 
 	@FindBy(xpath = " //span[contains(text(),'Online Dealers')]")
 	WebElement textOnlineDealers;
-	
+
+	@FindBy(xpath = "//iframe[@data-id='211436']")
+	WebElement iframe;
+
 	@FindBy(xpath = "//button[@aria-label='Search']")
 	WebElement SearchBtn;
-	
-	@FindBy(xpath = "//div[@class='poi_box']")
-	List <WebElement> AddressCount ;
 
-	@FindBy(xpath="//div[@class='filter_div']")
-	WebElement Filters;
+	@FindBy(xpath = "//div[@class='poi_box']")
+	List<WebElement> AddressCount;
+
+	@FindBy(xpath = "//button[@class='filter-toggle ga_w2gi_loc']")
+	WebElement FilterBtn;
+
+	@FindBy(xpath = "//label[@class='lblfilter']")
+	List<WebElement> Filters;
+
+	@FindBy(xpath="//div[@class='vf-footer-column__content large-only']//li[@class='vf-list__item']")
+	List<WebElement> FooterOptions;
 	
+
+	@FindBy(xpath="//input[@id='subscription-emailaddress']")
+	WebElement Email;
+	
+	@FindBy(xpath="//div[@role='checkbox']")
+	WebElement checkbox;
+	
+	@FindBy(xpath="//div[@class='vf-notification footer-bottom-section__subscribe-notification color-success']")
+	WebElement ConformationMsg;
 	
 	public TheNorthFaceStoreLocator(WebDriver driver) throws IOException {
 		this.driver = driver;
@@ -66,7 +86,7 @@ public class TheNorthFaceStoreLocator {
 	}
 
 	public void VerifyHeaders() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(7000);
 		Assert.assertTrue(TheNorthFaceLogo.isDisplayed());
 		System.out.println("The North Face Logo Is displayed");
 
@@ -96,18 +116,54 @@ public class TheNorthFaceStoreLocator {
 	public void verifyFindstore() throws InterruptedException {
 
 		Thread.sleep(3000);
-		 WebElement iframe = driver.findElement(By.xpath("//iframe[@data-id='211436']"));
 		driver.switchTo().frame(iframe);
 		System.out.println("InputField is Enabled");
 		SearchField.click();
 		SearchField.sendKeys("Santa Clara");
 		SearchBtn.click();
-		
-		for(WebElement Address:AddressCount) {
+
+		for (WebElement Address : AddressCount) {
 			System.out.println(Address.getText());
 		}
-		
-		}
+		driver.switchTo().parentFrame();
+	}
 
-	
+	public void ApplyFilters() throws Exception {
+		Thread.sleep(3000);
+		driver.switchTo().frame(iframe);
+		System.out.println("InputField is Enabled");
+		SearchField.click();
+		SearchBtn.clear();
+		SearchField.sendKeys("Santa Clara");
+		SearchBtn.click();
+		Thread.sleep(3000);
+		FilterBtn.click();
+
+		for (WebElement Fltr : Filters) {
+			Fltr.click();
+			String FilterName = Fltr.getText();
+			System.out.println("Filter name: " + FilterName + " and total address are " + AddressCount.size());
+			Thread.sleep(3000);
+			Fltr.click();
+		}
+		driver.switchTo().parentFrame();
+	}
+	public void FooterOptions() throws Exception {
+			Thread.sleep(4000);
+			JavascriptExecutor js= (JavascriptExecutor)driver;
+			js.executeScript("window.scrollBy(0,750)");
+			Thread.sleep(2000);
+			for(WebElement ftoptn:FooterOptions) {
+			System.out.println(ftoptn.getText());
+
+		}
+			Email.sendKeys("abc@gmail.com");
+			Assert.assertTrue(checkbox.isEnabled(), "Checkbox is clickable");
+			checkbox.click();
+			System.out.println("Thank You for Signing Up!");
+			Thread.sleep(2000);
+			Email.sendKeys(Keys.ENTER);	
+			System.out.println(ConformationMsg.getText());
+
+	}
 }

@@ -34,6 +34,15 @@ public class TheNorthFaceStoreLocator_test extends TestBase {
 		locator.verifyFindstore();
 	}
 	
+	@Test(priority =3)
+	public void verifyFilters_test() throws Exception {
+		locator.ApplyFilters();
+	}
+	
+	 @Test(priority = 4)
+	 public void VerifyFooterMenu() throws Exception {
+		 locator.FooterOptions();
+	 }
 	 
 //	@AfterClass
 //	public void end() {

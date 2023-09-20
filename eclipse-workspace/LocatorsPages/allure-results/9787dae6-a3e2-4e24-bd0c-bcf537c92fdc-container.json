@@ -1,0 +1,1 @@
+{"uuid":"9787dae6-a3e2-4e24-bd0c-bcf537c92fdc","name":"com.qa.Test.TheCheeseCakeFactoryTest2","children":["aae8352c-bf49-44a8-846f-de2128f00144"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1695184094754,"stop":1695184096181}],"afters":[],"links":[],"start":1695184094727,"stop":1695184122826}

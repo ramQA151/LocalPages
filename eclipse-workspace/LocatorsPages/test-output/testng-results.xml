@@ -1,91 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-15T11:57:28Z" name="Default suite" finished-at="2023-09-15T11:58:02Z" duration-ms="34812">
+  <suite started-at="2023-09-20T09:51:11Z" name="Default suite" finished-at="2023-09-20T09:52:30Z" duration-ms="79678">
     <groups>
     </groups>
-    <test started-at="2023-09-15T11:57:28Z" name="Default test" finished-at="2023-09-15T11:58:02Z" duration-ms="34812">
-      <class name="com.qa.Test.TheNorthFaceStoreLocator_test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.Test.TheNorthFaceStoreLocator_test@67fc2aad]" started-at="2023-09-15T11:57:28Z" name="setup" finished-at="2023-09-15T11:57:29Z" duration-ms="1567" status="PASS">
+    <test started-at="2023-09-20T09:51:11Z" name="Default test" finished-at="2023-09-20T09:52:30Z" duration-ms="79678">
+      <class name="com.qa.Test.TheCheeseCakeFactoryTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:11Z" name="setUp" finished-at="2023-09-20T09:51:12Z" duration-ms="1420" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyFindstore_test()[pri:2, instance:com.qa.Test.TheNorthFaceStoreLocator_test@67fc2aad]" started-at="2023-09-15T11:57:29Z" name="verifyFindstore_test" finished-at="2023-09-15T11:58:02Z" duration-ms="33161" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#search_input"}
-  (Session info: chrome=116.0.5845.188)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-OF3OC9C', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52058}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f2872387382b51ef9ae51e364334918
-*** Element info: {Using=id, value=search_input}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#search_input"}
-  (Session info: chrome=116.0.5845.188)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-OF3OC9C', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52058}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f2872387382b51ef9ae51e364334918
-*** Element info: {Using=id, value=search_input}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-at com.qa.Pages.TheNorthFaceStoreLocator.verifyFindstore(TheNorthFaceStoreLocator.java:104)
-at com.qa.Test.TheNorthFaceStoreLocator_test.verifyFindstore_test(TheNorthFaceStoreLocator_test.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyHeaderMenu()[pri:1, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:12Z" name="VerifyHeaderMenu" finished-at="2023-09-20T09:51:25Z" duration-ms="12467" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFindstore_test -->
-      </class> <!-- com.qa.Test.TheNorthFaceStoreLocator_test -->
+        </test-method> <!-- VerifyHeaderMenu -->
+        <test-method signature="VerifyLocation()[pri:2, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:25Z" name="VerifyLocation" finished-at="2023-09-20T09:51:38Z" duration-ms="13495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLocation -->
+        <test-method signature="VerifyOrderPickUp()[pri:6, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:38Z" name="VerifyOrderPickUp" finished-at="2023-09-20T09:51:54Z" duration-ms="16325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOrderPickUp -->
+        <test-method signature="VerifyOrderDelivery()[pri:7, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:54Z" name="VerifyOrderDelivery" finished-at="2023-09-20T09:52:13Z" duration-ms="18771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOrderDelivery -->
+        <test-method signature="VerifyFooterMenu()[pri:9, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:52:13Z" name="VerifyFooterMenu" finished-at="2023-09-20T09:52:30Z" duration-ms="17111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFooterMenu -->
+      </class> <!-- com.qa.Test.TheCheeseCakeFactoryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
