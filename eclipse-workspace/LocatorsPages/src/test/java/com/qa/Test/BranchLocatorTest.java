@@ -4,11 +4,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.qa.Base.TestBase;
-import com.qa.Pages.StoreLocator_TrueValue;
+import com.qa.Pages.BranchLocator;
 
 public class BranchLocatorTest extends TestBase {
 
-	StoreLocator_TrueValue storeLocator;
+	BranchLocator bloc;
 
 	public BranchLocatorTest() {
 		super();
@@ -18,58 +18,39 @@ public class BranchLocatorTest extends TestBase {
 	public void setUp() {
 
 		initialization();
-		storeLocator = new StoreLocator_TrueValue(driver);
-		driver.get(prop.getProperty("TrueValueLocator"));
+		bloc = new BranchLocator(driver);
+		driver.get(prop.getProperty("Branchlocator"));
 
 	}
 
+	
 	@Test(priority=1)
-	public void VerifyOpenLocatorPage() throws Exception {
-		storeLocator.SearchLocation();
-
+	public void VerifyHeaderMenu() throws Exception {
+		bloc.VerifyHeaderMenu();
 	}
-
 	@Test(priority=2)
-	public void VerifyTextFrame() throws Exception {
-		storeLocator.TextWindow();
+	public void VerifyCityTextbox() throws Exception {
+		bloc.EnterCity();
 	}
-
+	
 	@Test(priority=3)
-	public void VerifyTotalAddresses() throws Exception {
-		storeLocator.Address();
+	public void VerifyTotalCities() throws Exception {
+		bloc.TotalLocations();
 	}
-
+	
 	@Test(priority=4)
-	public void VerifyEmailWindow() throws Exception {
-		storeLocator.Email();
+	public void VerifyFilter() throws Exception {
+		bloc.FilterOptions();
 	}
-
+	
 	@Test(priority=5)
-	public void VerifyDropdownForCountry() throws Exception {
-		storeLocator.CountryDropdown();
+	public void VerifyEmailandPhone() throws Exception {
+		bloc.verifyMailandPhone();
 	}
-
-	@Test(priority=6)
-	public void VerifyFilters() throws Exception {
-		storeLocator.filterOptions();
-
-	}
-
-	@Test(priority=7)
-	public void VerifyAddress() throws Exception {
-		storeLocator.AddressVerify();
-
-	}
-
-	@Test(priority=8)
-	public void VerifyStoreRedirect() throws Exception {
-		storeLocator.RedirecttoStore();
-
-	}
-
+	
 	@AfterClass
 	public void tearDown() throws Exception {
-		driver.close();
+//		driver.close();
 
 	}
 }

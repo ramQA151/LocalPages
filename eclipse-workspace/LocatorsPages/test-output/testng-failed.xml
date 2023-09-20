@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.Test.TheCheeseCakeFactoryTest">
+      <class name="com.qa.Test.BranchLocatorTest">
         <methods>
+          <include name="tearDown"/>
+          <include name="VerifyEmailandPhone"/>
           <include name="setUp"/>
-          <include name="VerifyOrderDeliveryPagetitle"/>
-          <include name="VerifyFooterMenu"/>
-          <include name="VerifyOrderDelivery"/>
-          <include name="VerifyOrderPickUp"/>
-          <include name="VerifyRewardsPagetitle"/>
         </methods>
-      </class> <!-- com.qa.Test.TheCheeseCakeFactoryTest -->
+      </class> <!-- com.qa.Test.BranchLocatorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

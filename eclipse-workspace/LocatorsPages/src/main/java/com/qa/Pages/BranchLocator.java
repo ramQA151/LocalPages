@@ -1,268 +1,188 @@
 package com.qa.Pages;
 
 import java.util.List;
-import java.util.Set;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.Select;
 
 import com.qa.Base.TestBase;
 
 public class BranchLocator extends TestBase {
+
 	WebDriver driver;
+
+	@FindBy(xpath = "(//button[contains(text(),'Bank Accounts')])[2]")
+	WebElement BankAccount;
+
+	@FindBy(xpath = "(//button[contains(text(),'Credit Cards')])[2]")
+	WebElement CreditCard;
+
+	@FindBy(xpath = "(//button[contains(text(),'Mortgages')])[2]")
+	WebElement Mortgage;
+
+	@FindBy(xpath = "(//button[contains(text(),'Loans')])[3]")
+	WebElement Loans;
+
+	@FindBy(xpath = "(//button[contains(text(),'Investing')])[2]")
+	WebElement Investing;
+
+	@FindBy(xpath = "(//button[contains(text(),'Insurance')])[4]")
+	WebElement Insurance;
+
+	@FindBy(xpath = "(//button[contains(text(),'Offers & Programs')])[2]")
+	WebElement OffersPrograms;
+
 	@FindBy(xpath = "//input[@id='inputaddress']")
 	WebElement SearchTextBox;
 
-	@FindBy(xpath = "//button[@id='submit-button']")
-	WebElement FindStore;
+	@FindBy(css = "input#inputaddress")
+	WebElement inputBox;
 
-	@FindBy(xpath = "//li[@class='poi-item default']")
-	List<WebElement> TotalAddressCount;
+	@FindBy(css = "button#search_button")
+	WebElement SearchBtn;
 
-	@FindBy(xpath = "//div[@class='address_row']")
-	List<WebElement> TotalAddress;
+	@FindBy(xpath = "//div[@class='poi_address']")
+	List<WebElement> TotalLocations;
 
-	@FindBy(xpath = "//a[@class='ga_w2gi_loc']")
-	WebElement DirectionsLink;
+	@FindBy(xpath = "(//a[@role='button'])[1]")
+	WebElement FilterOptn;
 
-	@FindBy(xpath = "//a[@id='sendtoMobile7829']")
-	WebElement TextBtn;
+	@FindBy(xpath = "//select[@id='languages']")
+	WebElement LanguageDropdown;
 
-	@FindBy(xpath = "//div[@id='modalPop']")
-	WebElement Textbox;
+	@FindBy(xpath = "//div[@class='filter-toggles']//fieldset")
+	List<WebElement> BranchLocationCriteria;
 
-	@FindBy(xpath = "//*[@id='modalPop']")
-	WebElement frame;
-
-	@FindBy(xpath = "//span[contains(text(),'Send to a Mobile Device')]")
-	WebElement FrameHeading;
-
-	@FindBy(xpath = "//input[@name='usermobile']")
-	WebElement MobNumber;
-
-	@FindBy(xpath = "//input[@class='go_button']")
-	WebElement SubmitBtn;
-
-	@FindBy(xpath = "//div[contains(text(),'Your results have been sent to your mobile device.')]")
-	WebElement ConformationMsg;
-
-	@FindBy(xpath = "//a[@id='sendtoEmail7829']")
+	@FindBy(xpath = "//a[@id='email-b0033']")
 	WebElement Email;
 
-	@FindBy(xpath = "//input[@name='useremail']")
-	WebElement EnterEMail;
+	@FindBy(xpath = "//p[@id='dispPop']//iframe")
+	WebElement frame;
 
-	@FindBy(xpath = "//textarea[@name='usercomments']")
-	WebElement PersonalMessage;
+	@FindBy(xpath = "//input[@id='useremailaddress']")
+	WebElement Emailidbox;
 
-	@FindBy(xpath = "//span[contains(text(),'Send to an E-mail Address')]")
-	WebElement FrameTitle;
+	@FindBy(xpath = "//textarea[@id='emailTextArea']")
+	WebElement TextArea;
 
-	@FindBy(xpath = "//input[@type='submit']")
-	WebElement SubmitButton;
+	@FindBy(xpath = "//input[@ID='emailSubmitButton']")
+	WebElement SubmitBtn;
 
-	@FindBy(xpath = "//div[contains (text(), 'Your results have been sent to your e-mail address.')]")
-	WebElement Conformationmsg;
+	@FindBy(xpath = "//div[@class='divmargin' or contains(text(),'The location has been sent to your e-mail address.')]")
+	WebElement ConformationMsg;
 
-	@FindBy(xpath = "//select[@id='country']")
-	WebElement DropDown;
+	@FindBy(xpath = "//span[@class='zmdi zmdi-close']")
+	WebElement CloseWindow;
+	
+	@FindBy(xpath="(//a[@class='lightwindow mobileicon'])[1]")
+	WebElement Mobile;
 
-	@FindBy(xpath = "//div[@class='dropdown__item custom-checkbox']")
-	List<WebElement> Filter;
-
-	@FindBy(xpath = "//span[contains(text(),' Kempkers True Value and Rental, Inc.')]")
-	WebElement address;
-
-	@FindBy(xpath = "//a[contains(text(),'Store Info')][1]")
-	WebElement TrueValueHardwareSite;
-
-	@FindBy(xpath = "//*[contains(text(),'True Value Hardware')]//parent::td")
-	WebElement verifyaddressonMap;
-
-	@FindBy(xpath = "//a[@aria-label='Close Send Details via Email Window']")
-	WebElement CloseBtn;
-
+	@FindBy(id="userPhone")
+	WebElement mobileNumber;
+	
+	@FindBy(id="smsSubmitButton")
+	WebElement Submitbtnmobile;
+	
+	@FindBy(xpath="//div[@class='divmargin']")
+	WebElement Confrmationmsg;
+	
+	
 	public BranchLocator(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	public void SearchLocation() throws Exception {
-		SearchTextBox.click();
-		Thread.sleep(2000);
-		SearchTextBox.clear();
-		Thread.sleep(2000);
-		SearchTextBox.sendKeys("50266");
-		Thread.sleep(3000);
-		FindStore.click();
-		Thread.sleep(3000);
-		DirectionsLink.click();
-		System.out.println("Title of parent window is: " + driver.getTitle());
-		String parentWindowHandle = driver.getWindowHandle();
-		Set<String> allWindowHandles = driver.getWindowHandles();
-		for (String windowHandle : allWindowHandles) {
-			if (!windowHandle.equals(parentWindowHandle)) {
-				driver.switchTo().window(windowHandle);
-			}
+	public void VerifyHeaderMenu() {
+		if (BankAccount.isDisplayed()) {
+			System.out.println("Bank Account option is available");
 		}
-		Thread.sleep(6000);
-		System.out.println("Title of child window is: " + driver.getTitle());
-		driver.close();
-		driver.switchTo().window(parentWindowHandle);
+		if (CreditCard.isDisplayed()) {
+			System.out.println("Credit card option is available");
+		}
+		if (Mortgage.isDisplayed()) {
+			System.out.println("Mortgage option is available");
+		}
+		if (Loans.isDisplayed()) {
+			System.out.println("Loans option is available");
+		}
+
+		if (Investing.isDisplayed()) {
+			System.out.println("Investing option is available");
+		}
+
+		if (Insurance.isDisplayed()) {
+			System.out.println("Insurance option is available");
+		}
+
+		if (OffersPrograms.isDisplayed()) {
+			System.out.println("Offers & Programs option is available");
+		}
+
 	}
 
-	public void TextWindow() throws Exception {
-		SearchTextBox.click();
+	public void EnterCity() throws Exception {
+		Thread.sleep(8000);
+		inputBox.click();
+		inputBox.clear();
+		inputBox.sendKeys("st. Catharines ON");
 		Thread.sleep(2000);
-		SearchTextBox.clear();
-		Thread.sleep(2000);
-		SearchTextBox.sendKeys("50266");
-		Thread.sleep(3000);
-		FindStore.click();
-		Thread.sleep(3000);
-		TextBtn.click();
-		Thread.sleep(3000);
-		driver.switchTo().frame(1);
-		Thread.sleep(3000);
-		System.out.println(FrameHeading.getText());
-		MobNumber.sendKeys("9259876543");
-		SubmitBtn.click();
-		Thread.sleep(3000);
+		SearchBtn.click();
+	}
 
+	public void TotalLocations() throws Exception {
+		EnterCity();
+
+		for (WebElement Location : TotalLocations) {
+			System.out.println("City name: " + Location.getText());
+			System.out.println(" ");
+		}
+		System.out.println("Total city details are provided successfully");
+	}
+
+	public void FilterOptions() throws Exception {
+		EnterCity();
+		Thread.sleep(3000);
+		FilterOptn.click();
+		Thread.sleep(3000);
+		LanguageDropdown.click();
+		Select sel = new Select(LanguageDropdown);
+
+		List<WebElement> op = sel.getOptions();
+		int size = op.size();
+		for (int i = 0; i < size; i++) {
+			String options1 = op.get(i).getText();
+			System.out.println(options1);
+		}
+	}
+
+	public void verifyMailandPhone() throws Exception {
+		EnterCity();
+		Thread.sleep(5000);
+		Email.click();
+		driver.switchTo().frame(frame);
+		Thread.sleep(5000);
+		Emailidbox.click();
+		Emailidbox.sendKeys("abc@gmail.com");
+		TextArea.sendKeys("Test message");
+		SubmitBtn.click();
+
+		Thread.sleep(4000);
 		System.out.println(ConformationMsg.getText());
 		driver.navigate().refresh();
-
-	}
-
-	public void Address() throws Exception {
-		SearchTextBox.click();
-		Thread.sleep(2000);
-		SearchTextBox.clear();
-		Thread.sleep(2000);
-		SearchTextBox.sendKeys("50266");
-		Thread.sleep(3000);
-		FindStore.click();
-		Thread.sleep(3000);
-		List<WebElement> Address = TotalAddress;
-
-		for (WebElement adr : Address) {
-			String Addresses = adr.getText();
-			System.out.println(Addresses);
-			// Assert.assertEquals(Addresses, Addresses, "All Address are correct");
-		}
-
-	}
-
-	public void Email() throws Exception {
-		SearchTextBox.click();
-		Thread.sleep(2000);
-		SearchTextBox.clear();
-		Thread.sleep(2000);
-		SearchTextBox.sendKeys("50266");
-		Thread.sleep(3000);
-		FindStore.click();
-		Email.click();
-		Thread.sleep(3000);
-		driver.switchTo().frame(1);
 		Thread.sleep(4000);
-		System.out.println("Title of the frame is: " + FrameTitle.getText());
-		String ActAddress = verifyaddressonMap.getText();
-		System.out.println(ActAddress);
-		String ExpectedAddress = "True Value Hardware";
-		Assert.assertTrue(ActAddress.contains(ExpectedAddress));
-		EnterEMail.click();
-		EnterEMail.sendKeys("abc@gmail.com");
+		EnterCity();
 		Thread.sleep(3000);
-		PersonalMessage.sendKeys("This is test message please ignore");
-		SubmitButton.click();
-		String ConfrmationMesage = Conformationmsg.getText();
-
-		System.out.println(ConfrmationMesage);
-
-		Assert.assertTrue(ConfrmationMesage.contains("Your results have been sent to your e-mail address"));
+		Mobile.click();
+		Thread.sleep(3000);
+		driver.switchTo().frame(frame);
+		Thread.sleep(5000);
+		mobileNumber.sendKeys("8956231457");
+		Submitbtnmobile.click();
+		Thread.sleep(5000);
+		System.out.println(Confrmationmsg.getText());
 		driver.navigate().refresh();
 	}
-
-	public void CountryDropdown() throws Exception {
-		SearchTextBox.click();
-		Thread.sleep(2000);
-		SearchTextBox.clear();
-		Thread.sleep(2000);
-		SearchTextBox.sendKeys("50266");
-		Thread.sleep(3000);
-		FindStore.click();
-		Thread.sleep(3000);
-		DropDown.click();
-		String value = DropDown.getText().toString();
-		System.out.println(value);
-		Assert.assertTrue(value.contains("USA"));
-		System.out.println("Dropdown contains USA Value");
-
-	}
-
-	public void filterOptions() throws Exception {
-		SearchTextBox.click();
-		Thread.sleep(2000);
-		SearchTextBox.clear();
-		Thread.sleep(2000);
-		SearchTextBox.sendKeys("50266");
-		Thread.sleep(3000);
-		FindStore.click();
-
-		for (WebElement ft : Filter) {
-			ft.click();
-			String FilterName = ft.getText();
-			System.out.println("Total address for: " + FilterName + "are: " + TotalAddressCount.size());
-			Thread.sleep(5000);
-			ft.click();
-		}
-	}
-
-	public void AddressVerify() throws Exception {
-		SearchTextBox.click();
-		Thread.sleep(2000);
-		SearchTextBox.clear();
-		Thread.sleep(2000);
-		SearchTextBox.sendKeys("50266");
-		Thread.sleep(3000);
-		FindStore.click();
-		String actAddress = address.getText();
-		// TotalAddress.contains(address);
-		String ExpectedAddress = ("KEMPKERS TRUE VALUE AND RENTAL, INC.");
-		Assert.assertEquals(actAddress, ExpectedAddress);
-		System.out.println("Expected and Actual Address Matched");
-
-	}
-
-	public void RedirecttoStore() throws Exception {
-		SearchTextBox.click();
-		Thread.sleep(2000);
-		SearchTextBox.clear();
-		Thread.sleep(2000);
-		SearchTextBox.sendKeys("50266");
-		Thread.sleep(3000);
-		FindStore.click();
-		TrueValueHardwareSite.click();
-		String parentWindowHandle = driver.getWindowHandle();
-
-		Set<String> allWindowHandles = driver.getWindowHandles();
-
-		for (String windowHandle : allWindowHandles) {
-			if (!windowHandle.equals(parentWindowHandle)) {
-				driver.switchTo().window(windowHandle);
-
-			}
-		}
-		Thread.sleep(3000);
-		System.out.println(driver.findElement(By.xpath("//h1[@class='storename ']")).getText());
-		Thread.sleep(3000);
-		driver.close();
-		driver.switchTo().window(parentWindowHandle);
-
-	}
-
 }

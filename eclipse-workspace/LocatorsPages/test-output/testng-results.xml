@@ -2,36 +2,40 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-20T09:51:11Z" name="Default suite" finished-at="2023-09-20T09:52:30Z" duration-ms="79678">
+  <suite started-at="2023-09-20T12:11:52Z" name="Default suite" finished-at="2023-09-20T12:13:31Z" duration-ms="99168">
     <groups>
     </groups>
-    <test started-at="2023-09-20T09:51:11Z" name="Default test" finished-at="2023-09-20T09:52:30Z" duration-ms="79678">
-      <class name="com.qa.Test.TheCheeseCakeFactoryTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:11Z" name="setUp" finished-at="2023-09-20T09:51:12Z" duration-ms="1420" status="PASS">
+    <test started-at="2023-09-20T12:11:52Z" name="Default test" finished-at="2023-09-20T12:13:31Z" duration-ms="99168">
+      <class name="com.qa.Test.BranchLocatorTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:11:52Z" name="setUp" finished-at="2023-09-20T12:11:54Z" duration-ms="1450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyHeaderMenu()[pri:1, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:12Z" name="VerifyHeaderMenu" finished-at="2023-09-20T09:51:25Z" duration-ms="12467" status="PASS">
+        <test-method signature="VerifyHeaderMenu()[pri:1, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:11:54Z" name="VerifyHeaderMenu" finished-at="2023-09-20T12:11:58Z" duration-ms="4800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyHeaderMenu -->
-        <test-method signature="VerifyLocation()[pri:2, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:25Z" name="VerifyLocation" finished-at="2023-09-20T09:51:38Z" duration-ms="13495" status="PASS">
+        <test-method signature="VerifyCityTextbox()[pri:2, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:11:58Z" name="VerifyCityTextbox" finished-at="2023-09-20T12:12:09Z" duration-ms="10308" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLocation -->
-        <test-method signature="VerifyOrderPickUp()[pri:6, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:38Z" name="VerifyOrderPickUp" finished-at="2023-09-20T09:51:54Z" duration-ms="16325" status="PASS">
+        </test-method> <!-- VerifyCityTextbox -->
+        <test-method signature="VerifyTotalCities()[pri:3, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:12:09Z" name="VerifyTotalCities" finished-at="2023-09-20T12:12:19Z" duration-ms="10307" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyOrderPickUp -->
-        <test-method signature="VerifyOrderDelivery()[pri:7, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:51:54Z" name="VerifyOrderDelivery" finished-at="2023-09-20T09:52:13Z" duration-ms="18771" status="PASS">
+        </test-method> <!-- VerifyTotalCities -->
+        <test-method signature="VerifyFilter()[pri:4, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:12:19Z" name="VerifyFilter" finished-at="2023-09-20T12:12:36Z" duration-ms="16809" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyOrderDelivery -->
-        <test-method signature="VerifyFooterMenu()[pri:9, instance:com.qa.Test.TheCheeseCakeFactoryTest@17b6d426]" started-at="2023-09-20T09:52:13Z" name="VerifyFooterMenu" finished-at="2023-09-20T09:52:30Z" duration-ms="17111" status="PASS">
+        </test-method> <!-- VerifyFilter -->
+        <test-method signature="VerifyEmailandPhone()[pri:5, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:12:36Z" name="VerifyEmailandPhone" finished-at="2023-09-20T12:13:31Z" duration-ms="55401" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyFooterMenu -->
-      </class> <!-- com.qa.Test.TheCheeseCakeFactoryTest -->
+        </test-method> <!-- VerifyEmailandPhone -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:13:31Z" name="tearDown" finished-at="2023-09-20T12:13:31Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.Test.BranchLocatorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
