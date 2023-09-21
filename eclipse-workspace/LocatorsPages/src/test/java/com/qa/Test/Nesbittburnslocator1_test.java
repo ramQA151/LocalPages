@@ -1,14 +1,12 @@
 package com.qa.Test;
 
-import java.io.IOException;
-
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.qa.Base.TestBase;
 import com.qa.Pages.Nesbittburnslocator1;
 
-//@Listeners(TestListener.class)
-public class Nesbittburnslocator1_test extends Nesbittburnslocator1 {
+public class Nesbittburnslocator1_test extends TestBase {
 
 	Nesbittburnslocator1 bmo1;
 	public Nesbittburnslocator1_test() {
@@ -16,13 +14,14 @@ public class Nesbittburnslocator1_test extends Nesbittburnslocator1 {
 		}
 	
 	@BeforeClass
-	public void setup() throws IOException {
-		//initialization();
-		BrowserStack_Invocation();
-		//Edge_BrowsersStack_Invocation();
-		 bmo1= new Nesbittburnslocator1();
+	public void setup() {
+		initialization();
+		 bmo1= new Nesbittburnslocator1(driver);
+		 driver.get(prop.getProperty("nesbittburnslocator1"));
 	}
-
+	
+	
+	
 	@Test(priority = 1)
 	
 	public void verifyHomeDetails_test() {
@@ -65,6 +64,6 @@ public class Nesbittburnslocator1_test extends Nesbittburnslocator1 {
 	@AfterClass
 	public void end() throws InterruptedException {
 	Thread.sleep(3000);
-		driver.quit();
+		//driver.quit();
 	}
 }

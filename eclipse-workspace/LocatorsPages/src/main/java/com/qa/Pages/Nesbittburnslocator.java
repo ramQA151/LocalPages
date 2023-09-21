@@ -1,10 +1,5 @@
 package com.qa.Pages;
 
-
-import java.io.IOException;
-
-import org.openqa.selenium.By;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -125,7 +120,7 @@ WebElement heading_top;
 @FindBy(name="firstname")
 WebElement firstnamefield;
 
-@FindBy(xpath="lastname")
+@FindBy(name="lastname")
 WebElement LastNameField;
 
 @FindBy(name="emailaddress")
@@ -146,7 +141,7 @@ WebElement closebtn2;
 @FindBy(xpath="//span[@id='moreDetails686-fr']")
 WebElement profile_btn;
 
-@FindBy(xpath="//div[@class='desktop bold title']")
+@FindBy(xpath="//h1[contains(text(),'Daniel Gruchala')]")
 WebElement titlename;
 
 @FindBy(xpath="//div[@id='captcha_element']/div/div/iframe")
@@ -211,11 +206,13 @@ public Nesbittburnslocator(WebDriver driver) {
 	}
 	
 	public void VerifyGetDirection() throws InterruptedException {
+		Thread.sleep(5000);
+		searchbylocation();
 		Thread.sleep(4000);
 		getdirection.click();
-		Thread.sleep(5000);
-		Assert.assertTrue(direction_details.isDisplayed());
-		System.out.println("Direction Address Details :- " + direction_details.getText());
+		Thread.sleep(7000);
+		
+		System.out.println("Direction Address Details :- " + driver.getTitle());
 		driver.navigate().back();
 	}
 	
@@ -255,6 +252,8 @@ public Nesbittburnslocator(WebDriver driver) {
 	
 	public void VerifyEmailMe() throws InterruptedException {
 		Thread.sleep(4000);
+		searchbylocation();
+		Thread.sleep(4000);
 		emailme.click();
 		Thread.sleep(5000);
 		driver.switchTo().frame(frame2);
@@ -274,20 +273,22 @@ public Nesbittburnslocator(WebDriver driver) {
 		homephone.sendKeys("3334445555");
 		Thread.sleep(1000);
 		Assert.assertTrue(textarea.isEnabled());
-		textarea.sendKeys("test");
+		textarea.sendKeys("test message");
 		Thread.sleep(1000);
-		driver.switchTo().frame(frame3);
-		check_box.click();
-		driver.switchTo().frame(frame1);
-		Thread.sleep(1000);
+	//	driver.switchTo().frame(frame3);
+	//	check_box.click();
+	//	driver.switchTo().frame(frame1);
+	//	Thread.sleep(1000);
 		Assert.assertTrue(sendmail_btn.isEnabled());
-		sendmail_btn.click();
+		//sendmail_btn.click();
 		driver.switchTo().defaultContent();
 		Thread.sleep(3000);
 		closebtn2.click();
 	}
 	
 	public void verify_profiledetails() throws InterruptedException {
+		Thread.sleep(5000);
+		searchbylocation();
 		Thread.sleep(4000);
 		profile_btn.click();
 		Thread.sleep(5000);

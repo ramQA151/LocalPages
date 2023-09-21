@@ -1,41 +1,36 @@
 package com.qa.Pages;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class Nesbittburnslocator1 {
+import com.qa.Base.TestBase;
 
-	public static WebDriver driver;
-	
+public class Nesbittburnslocator1 extends TestBase {
+
+	WebDriver driver;
+
 	@FindBy(xpath = "//a[@class='tl-header-secondary-logo']//img")
 	WebElement BMO_logo;
 
 	@FindBy(xpath = "//h3[contains(text(),'Find an Investment Advisor')]")
 	WebElement bmo_heading;
-	
+
 	@FindBy(xpath = "//h4[contains(text(),'Search by Advisor Name')]")
 	WebElement searchadvisorname_heading;
-	
+
 	@FindBy(xpath = "//input[@placeholder='First Name']")
 	WebElement firstname_field;
 
 	@FindBy(xpath = "//input[@placeholder='Last Name']")
 	WebElement lastname_field;
-	
+
 	@FindBy(xpath = "//button[@class='search-by-name']")
 	WebElement searchbyname_btn;
-	
+
 	@FindBy(xpath = "//span[@id='Name26993']")
 	WebElement advisor_name;
 
@@ -56,75 +51,58 @@ public class Nesbittburnslocator1 {
 
 	@FindBy(xpath = "//a[@id='contactmeDesktop26993']")
 	WebElement emailme_link;
+
+	@FindBy(xpath = "//a[@id='sendtoEmail26993']")
+	WebElement sendvia_email;
+
+	@FindBy(xpath = "//p[@id='dispPop']//iframe")
+	WebElement frame1;
+
+	@FindBy(xpath = "//div[@class='theAddress']")
+	WebElement details;
+
+	@FindBy(id = "useremailaddress")
+	WebElement emailfield;
+
+	@FindBy(id = "emailTextArea")
+	WebElement emailtextfield;
+
+	@FindBy(id="emailSubmitButton")
+	WebElement emailsubmit_btn;
 	
-	public Nesbittburnslocator1() {
-		super();
+	@FindBy(xpath="//a[@class='closeBtn']")
+	WebElement closebtn;
+	
+	@FindBy(xpath="//p[@id='dispPop']//iframe")
+	WebElement frame2;
+	
+	@FindBy(xpath="//a[@id='sendtoMobile26993']")
+	WebElement sendvia_mobile;
+	
+	@FindBy(xpath="//div[@class='theAddress']")
+	WebElement details2;
+	
+	@FindBy(id="userPhone")
+	WebElement mobilefeild;
+	
+	@FindBy(id="smsSubmitButton")
+	WebElement mobilesubmit_btn1;
+	
+	@FindBy(xpath="//a[@class='closeBtn']")
+	WebElement closebtn1;
+	
+	@FindBy(xpath="//span[@id='moreDetails26993-fr']")
+	WebElement profile_btn;
+	
+	@FindBy(xpath="//h1[contains(text(),'Greg Kurtz')]")
+	WebElement titlename;
+	
+	public Nesbittburnslocator1(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	public static final String AUTOMATE_USERNAME = "brandify2";
-	  public static final String AUTOMATE_ACCESS_KEY = "W6Vg1fpe2sUbJtxWsvs2";
-	  public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
-	 
-	public static void initialization() {
-		String baseurl = "https://nesbittburnslocator.bmo.com/index.y.html";
-		System.setProperty("webdriver.chrome.driver", "E:\\NEDP Automation\\driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-	 driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-	 driver.get(baseurl);
-	 
-	}
-	
-	public static void BrowserStack_Invocation() throws MalformedURLException {
-		String baseurl = "https://nesbittburnslocator.bmo.com/index.y.html";
-		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability("os", "Windows");
-		caps.setCapability("os_version", "10");
-		caps.setCapability("browser", "Chrome");
-		caps.setCapability("browser_version", "79.0");
-		caps.setCapability("resolution", "1366x768");
-		caps.setCapability("project", "Local & Locators_Pages");
-		caps.setCapability("build", "Locator-Page");
-		caps.setCapability("name", "Nesbittburns1_locatorPage");
-		//caps.setCapability("browserstack.local", "false");
-		//caps.setCapability("browserstack.selenium_version", "3.14.0");
-
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-		    driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-			 driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-		    driver.get(baseurl);
-	}
-	
-	public static void Edge_BrowsersStack_Invocation() throws MalformedURLException {
-		String baseurl = "https://nesbittburnslocator.bmo.com/index.y.html";
-		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability("os", "Windows");
-		caps.setCapability("os_version", "10");
-		caps.setCapability("browser", "Edge");
-		caps.setCapability("browser_version", "17.0");
-		caps.setCapability("resolution", "1366x768");
-		caps.setCapability("project", "Local & Locators_Pages");
-		caps.setCapability("build", "Locator-Page");
-		caps.setCapability("name", "Nesbittburns1_locatorPage");
-		caps.setCapability("browserstack.local", "false");
-		caps.setCapability("browserstack.selenium_version", "3.14.0");
-
-		    driver = new RemoteWebDriver(new URL(URL), caps);
-		    driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(22, TimeUnit.SECONDS);
-		    driver.get(baseurl);
-	}
-	
 	public void verifyHomeDetails() {
-		Assert.assertTrue(BMO_logo.isDisplayed());
-		System.out.println("BMO Wealth Mangemnet logo is displayed");
 		Assert.assertTrue(bmo_heading.isDisplayed());
 		System.out.println(bmo_heading.getText());
 		Assert.assertTrue(searchadvisorname_heading.isDisplayed());
@@ -136,7 +114,7 @@ public class Nesbittburnslocator1 {
 		Assert.assertTrue(searchbyname_btn.isEnabled());
 		System.out.println("Find an Advisor button is Enabled");
 	}
-	
+
 	public void SearchByName() throws InterruptedException {
 		Thread.sleep(3000);
 		firstname_field.clear();
@@ -149,16 +127,16 @@ public class Nesbittburnslocator1 {
 		searchbyname_btn.click();
 		Thread.sleep(5000);
 	}
-	
+
 	public void Advisor_info() throws InterruptedException {
 		Assert.assertTrue(advisor_name.isDisplayed());
-		System.out.println("Name of Advisor:- "+advisor_name.getText());
+		System.out.println("Name of Advisor:- " + advisor_name.getText());
 		Assert.assertTrue(advisor_details.isDisplayed());
-		System.out.println("Advisor post and address is:- "+advisor_details.getText());
+		System.out.println("Advisor post and address is:- " + advisor_details.getText());
 		Assert.assertTrue(advisor_phone.isDisplayed());
-		System.out.println("Advisor Phone number is:- "+advisor_phone.getText());	
+		System.out.println("Advisor Phone number is:- " + advisor_phone.getText());
 	}
-	
+
 	public void VerifyGetdirection() throws InterruptedException {
 		Thread.sleep(4000);
 		getdirection.click();
@@ -168,63 +146,49 @@ public class Nesbittburnslocator1 {
 		driver.navigate().to("https://nesbittburnslocator.bmo.com/index.y.html");
 		driver.manage().deleteAllCookies();
 	}
+
 	public void verifySendToEmail() throws InterruptedException {
-		WebElement sendvia_email=driver.findElement(By.xpath("//a[@id='sendtoEmail26993']"));
 		sendvia_email.click();
 		Thread.sleep(8000);
-		WebElement frame1=driver.findElement(By.xpath("//p[@id='dispPop']//iframe"));
 		driver.switchTo().frame(frame1);
-		WebElement details=driver.findElement(By.xpath("//div[@class='theAddress']"));
 		Assert.assertTrue(details.isDisplayed());
-		System.out.println("Investor Details:- "+ details.getText());
+		System.out.println("Investor Details:- " + details.getText());
 		Thread.sleep(3000);
-		WebElement emailfield=driver.findElement(By.id("useremailaddress"));
 		emailfield.sendKeys("ayadav@where2getit.com");
 		Thread.sleep(3000);
-		WebElement emailtextfield=driver.findElement(By.id("emailTextArea"));
 		emailtextfield.sendKeys("Test Email");
 		Thread.sleep(3000);
-		WebElement emailsubmit_btn=driver.findElement(By.id("emailSubmitButton"));
 		emailsubmit_btn.click();
 		driver.switchTo().defaultContent();
 		Thread.sleep(3000);
-		WebElement closebtn=driver.findElement(By.xpath("//a[@class='closeBtn']"));
 		closebtn.click();
-		//driver.navigate().to("https://nesbittburnslocator.bmo.com/index.y.html");
-		//driver.manage().deleteAllCookies();
-		
+		// driver.navigate().to("https://nesbittburnslocator.bmo.com/index.y.html");
+		// driver.manage().deleteAllCookies();
+
 	}
-	
+
 	public void VerifySendToMobile() throws InterruptedException {
 		Thread.sleep(3000);
-		WebElement sendvia_mobile=driver.findElement(By.xpath("//a[@id='sendtoMobile26993']"));
 		sendvia_mobile.click();
 		Thread.sleep(5000);
-		WebElement frame1=driver.findElement(By.xpath("//p[@id='dispPop']//iframe"));
-		driver.switchTo().frame(frame1);
-		WebElement details=driver.findElement(By.xpath("//div[@class='theAddress']"));
-		Assert.assertTrue(details.isDisplayed());
-		System.out.println("Investor Details:- "+ details.getText());
+		driver.switchTo().frame(frame2);
+		Assert.assertTrue(details2.isDisplayed());
+		System.out.println("Investor Details:- " + details.getText());
 		Thread.sleep(3000);
-		WebElement mobilefeild=driver.findElement(By.id("userPhone"));
 		mobilefeild.sendKeys("3334445555");
 		Thread.sleep(3000);
-		WebElement mobilesubmit_btn=driver.findElement(By.id("smsSubmitButton"));
-		mobilesubmit_btn.click();
+		mobilesubmit_btn1.click();
 		driver.switchTo().defaultContent();
 		Thread.sleep(3000);
-		WebElement closebtn=driver.findElement(By.xpath("//a[@class='closeBtn']"));
-		closebtn.click();
-		//driver.navigate().to("https://nesbittburnslocator.bmo.com/index.y.html");
-		//driver.manage().deleteAllCookies();
+		closebtn1.click();
+		// driver.navigate().to("https://nesbittburnslocator.bmo.com/index.y.html");
+		// driver.manage().deleteAllCookies();
 	}
-	
+
 	public void verify_profiledetails() throws InterruptedException {
 		Thread.sleep(4000);
-		WebElement profile_btn=driver.findElement(By.xpath("//span[@id='moreDetails26993-fr']"));
 		profile_btn.click();
 		Thread.sleep(5000);
-		WebElement titlename=driver.findElement(By.xpath("//div[@class='desktop bold title']"));
 		Assert.assertTrue(titlename.isDisplayed());
 		System.out.println(titlename.getText());
 		driver.navigate().back();

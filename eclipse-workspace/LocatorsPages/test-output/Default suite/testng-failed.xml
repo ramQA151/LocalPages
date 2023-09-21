@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.Test.Nesbittburnslocator_test">
         <methods>
-          <include name="verifySendToEmail_test"/>
+          <include name="VerifyEmailMe_test"/>
           <include name="end"/>
           <include name="setup"/>
         </methods>
