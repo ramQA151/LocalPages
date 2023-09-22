@@ -120,6 +120,8 @@ public class AttStores extends TestBase {
 	
 	@FindBy(xpath="//div[@class='bannerT']")
 	WebElement AttStores;
+	
+	
 
 	public AttStores(WebDriver driver) {
 		this.driver = driver;

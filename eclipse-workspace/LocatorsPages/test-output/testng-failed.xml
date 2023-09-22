@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.Test.Nesbittburnslocator_test">
+      <class name="com.qa.Test.DollerTreeTest">
         <methods>
-          <include name="VerifyEmailMe_test"/>
-          <include name="end"/>
+          <include name="TearDown"/>
           <include name="setup"/>
+          <include name="VerifyTotalStores"/>
+          <include name="VerifyStoreDetails"/>
+          <include name="VerifyTotalFilters"/>
         </methods>
-      </class> <!-- com.qa.Test.Nesbittburnslocator_test -->
+      </class> <!-- com.qa.Test.DollerTreeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
