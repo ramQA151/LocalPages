@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-20T12:11:52Z" name="Default suite" finished-at="2023-09-20T12:13:31Z" duration-ms="99168">
+  <suite started-at="2023-09-22T12:02:58Z" name="Default suite" finished-at="2023-09-22T12:03:15Z" duration-ms="17054">
     <groups>
     </groups>
-    <test started-at="2023-09-20T12:11:52Z" name="Default test" finished-at="2023-09-20T12:13:31Z" duration-ms="99168">
-      <class name="com.qa.Test.BranchLocatorTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:11:52Z" name="setUp" finished-at="2023-09-20T12:11:54Z" duration-ms="1450" status="PASS">
+    <test started-at="2023-09-22T12:02:58Z" name="Default test" finished-at="2023-09-22T12:03:15Z" duration-ms="17054">
+      <class name="com.qa.Test.DollerTreeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.Test.DollerTreeTest@33a3c44a]" started-at="2023-09-22T12:02:58Z" name="setup" finished-at="2023-09-22T12:03:00Z" duration-ms="1554" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="VerifyHeaderMenu()[pri:1, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:11:54Z" name="VerifyHeaderMenu" finished-at="2023-09-20T12:11:58Z" duration-ms="4800" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyStoreDetails()[pri:4, instance:com.qa.Test.DollerTreeTest@33a3c44a]" started-at="2023-09-22T12:03:00Z" name="VerifyStoreDetails" finished-at="2023-09-22T12:03:15Z" duration-ms="15402" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyHeaderMenu -->
-        <test-method signature="VerifyCityTextbox()[pri:2, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:11:58Z" name="VerifyCityTextbox" finished-at="2023-09-20T12:12:09Z" duration-ms="10308" status="PASS">
+        </test-method> <!-- VerifyStoreDetails -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.Test.DollerTreeTest@33a3c44a]" started-at="2023-09-22T12:03:15Z" name="TearDown" finished-at="2023-09-22T12:03:15Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyCityTextbox -->
-        <test-method signature="VerifyTotalCities()[pri:3, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:12:09Z" name="VerifyTotalCities" finished-at="2023-09-20T12:12:19Z" duration-ms="10307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyTotalCities -->
-        <test-method signature="VerifyFilter()[pri:4, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:12:19Z" name="VerifyFilter" finished-at="2023-09-20T12:12:36Z" duration-ms="16809" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyFilter -->
-        <test-method signature="VerifyEmailandPhone()[pri:5, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:12:36Z" name="VerifyEmailandPhone" finished-at="2023-09-20T12:13:31Z" duration-ms="55401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyEmailandPhone -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Test.BranchLocatorTest@680a66dd]" started-at="2023-09-20T12:13:31Z" name="tearDown" finished-at="2023-09-20T12:13:31Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.Test.BranchLocatorTest -->
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.qa.Test.DollerTreeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -19,7 +19,7 @@ public class OfficeDepotTest extends TestBase{
 		OfficeDept = new OfficeDepot(driver);
 		driver.get(prop.getProperty("OfficeDepot"));
 
-		//.
+		
 		}
 	@Test (priority=1)
 	public void VerifyHeading() throws Exception {
